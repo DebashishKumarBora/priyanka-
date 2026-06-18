@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact — Priyanka Moura</title>
+<meta name="description" content="Get in touch with Priyanka Moura — social media manager and digital strategist based in Gurgaon, India."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Priyanka<span class="dot">.</span></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="work.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" aria-label="Toggle theme"><span class="sun">☀️</span><span class="moon">🌙</span></button>
+    <a href="contact.html" class="btn btn-primary">Work With Me</a>
+    <button class="hamburger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="work.html">Work</a><a href="services.html">Services</a><a href="contact.html" class="active">Contact</a>
+</div>
+
+<header class="page-head">
+  <div class="hero-orb orb-1"></div>
+  <div class="container reveal">
+    <span class="eyebrow">Contact</span>
+    <h1>Let's build something <span class="gradient-text">great together</span></h1>
+    <p>Currently open to new roles and freelance projects. Drop me a message and I'll get back to you soon.</p>
+  </div>
+</header>
+
+<section class="section" style="padding-top:2rem;">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <h2 class="section-title" style="font-size:1.8rem;">Reach me directly</h2>
+        <p style="color:var(--text-3); line-height:1.7;">Prefer email or LinkedIn? Here's the fastest way to get in touch.</p>
+        <div class="contact-links">
+          <a href="mailto:priyankamoura0025@gmail.com" class="clink">
+            <div class="ci">✉️</div>
+            <div><div class="ct">Email</div><div class="cv">priyankamoura0025@gmail.com</div></div>
+          </a>
+          <a href="https://linkedin.com/in/priyanka-moura" target="_blank" rel="noopener" class="clink">
+            <div class="ci">💼</div>
+            <div><div class="ct">LinkedIn</div><div class="cv">linkedin.com/in/priyanka-moura</div></div>
+          </a>
+          <a href="#" class="clink">
+            <div class="ci">📍</div>
+            <div><div class="ct">Location</div><div class="cv">Gurgaon, India</div></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- To make this form send real emails: sign up at formspree.io,
+           then set action="https://formspree.io/f/YOUR_ID" and method="POST" below -->
+      <form class="form reveal" id="contactForm">
+        <div class="fg">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Rahul Sharma" required/>
+        </div>
+        <div class="fg">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="rahul@company.com" required/>
+        </div>
+        <div class="fg">
+          <label for="service">What do you need?</label>
+          <select id="service" name="service">
+            <option value="">Select a service…</option>
+            <option>Social Media Management</option>
+            <option>Paid Campaigns (Meta/Google)</option>
+            <option>Content & Reels</option>
+            <option>Strategy & Growth Audit</option>
+            <option>Full-time role</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label for="message">Tell me about your brand</label>
+          <textarea id="message" name="message" placeholder="What platforms are you on? What's your goal?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full btn-lg">Send message 🚀</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Priyanka<span class="accent">.</span></div>
+        <p class="footer-about">Social media manager & digital strategist helping brands grow with creativity backed by data. Based in Gurgaon, India.</p>
+      </div>
+      <div class="footer-col"><h4>Navigate</h4><a href="about.html">About</a><a href="work.html">Work</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Connect</h4><a href="mailto:priyankamoura0025@gmail.com">Email</a><a href="https://linkedin.com/in/priyanka-moura" target="_blank" rel="noopener">LinkedIn</a><a href="#">Instagram</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Priyanka Moura. All rights reserved.</p><p>Built with care · Gurgaon, India</p></div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
