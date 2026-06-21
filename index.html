@@ -4,451 +4,443 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Priyanka Moura · Social Media Manager</title>
-<meta name="description" content="Priyanka Moura is a social media manager who turns brands into the accounts people actually want to follow. 5 years, ₹1Cr+ budgets, work across Web3, travel, and crowdfunding.">
+<meta name="description" content="Priyanka Moura is a social media manager with 6+ years turning brands into accounts people actually want to follow. Web3, travel, crowdfunding. ₹1Cr+ budgets, TOKEN2049 Dubai, +65% engagement.">
+<meta property="og:title" content="Priyanka Moura · Social Media Manager">
+<meta property="og:description" content="6+ years growing brands across Web3, travel, and crowdfunding. Strategy, content, community, paid social.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,500;1,9..144,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
-   PRIYANKA MOURA — "THE LIVING FEED" identity
-   Single self-contained file. Mobile-first.
-   Base rules = phone. min-width media queries scale up.
+   PRIYANKA MOURA — "THE LIVING FEED" v2
+   Single self-contained file. MOBILE-FIRST (base = phone).
+   min-width media queries scale up to tablet/desktop.
    ============================================================ */
 
 :root{
-  /* sunset brand accents (theme-independent) */
-  --rose:#FF5D8F;
-  --coral:#FF8A5B;
-  --gold:#FFC75F;
-  --lilac:#B388FF;
-  --plum:#6A2C70;
-
+  --rose:#FF4D88; --coral:#FF7A4D; --gold:#FFC24B; --lilac:#A87BFF; --plum:#5B2A6E;
   --grad:linear-gradient(118deg, var(--rose), var(--coral) 52%, var(--gold));
   --grad-2:linear-gradient(135deg, var(--lilac), var(--rose) 60%, var(--coral));
-  --grad-soft:linear-gradient(118deg, rgba(255,93,143,.16), rgba(255,138,91,.12), rgba(255,199,95,.14));
-
+  --grad-soft:linear-gradient(118deg, rgba(255,77,136,.16), rgba(255,122,77,.12), rgba(255,194,75,.14));
   --display:'Fraunces',Georgia,serif;
   --body:'DM Sans',system-ui,sans-serif;
-
-  --r-sm:12px; --r:18px; --r-lg:28px; --r-pill:999px;
+  --r-sm:12px; --r:18px; --r-lg:26px; --r-xl:32px; --r-pill:999px;
   --ease:cubic-bezier(.22,1,.36,1);
-  --maxw:1180px; --nav-h:72px;
+  --maxw:1160px; --nav-h:66px;
 }
-
 [data-theme="light"]{
-  --bg:#FFF8F3; --bg2:#FFF1E9; --surface:#FFFFFF; --surface2:#FFF6F0;
-  --border:rgba(106,44,112,.10); --border2:rgba(106,44,112,.18);
-  --text:#2B2330; --muted:#7A6E80; --faint:#A99FAE;
-  --glow:rgba(255,93,143,.30);
-  --card-shadow:0 24px 60px -30px rgba(106,44,112,.28);
-  --ph-shadow:0 40px 80px -30px rgba(106,44,112,.35);
+  --bg:#FFF7F2; --bg2:#FFEEE5; --surface:#FFFFFF; --surface2:#FFF4EE;
+  --border:rgba(91,42,110,.10); --border2:rgba(91,42,110,.18);
+  --text:#241C2B; --muted:#796C81; --faint:#A99FAE;
+  --glow:rgba(255,77,136,.32);
+  --card-shadow:0 22px 55px -30px rgba(91,42,110,.30);
+  --ph-shadow:0 40px 80px -30px rgba(91,42,110,.38);
 }
 [data-theme="dark"]{
-  --bg:#1A1320; --bg2:#160F1C; --surface:#241A2E; --surface2:#2C2138;
-  --border:rgba(255,255,255,.09); --border2:rgba(255,255,255,.16);
-  --text:#F5EEF5; --muted:#B6A6BD; --faint:#7E6E86;
-  --glow:rgba(255,93,143,.34);
+  --bg:#160F1C; --bg2:#120B17; --surface:#211829; --surface2:#2A1F35;
+  --border:rgba(255,255,255,.09); --border2:rgba(255,255,255,.17);
+  --text:#F6EFF6; --muted:#B7A8BE; --faint:#7E6E86;
+  --glow:rgba(255,77,136,.36);
   --card-shadow:0 24px 60px -28px rgba(0,0,0,.7);
-  --ph-shadow:0 40px 90px -30px rgba(0,0,0,.75);
+  --ph-shadow:0 40px 90px -30px rgba(0,0,0,.78);
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:var(--nav-h);overflow-x:clip}
 body{
-  font-family:var(--body); background:var(--bg); color:var(--text);
-  line-height:1.6; overflow-x:clip; -webkit-font-smoothing:antialiased;
+  font-family:var(--body); background:var(--bg); color:var(--text); line-height:1.6;
+  overflow-x:clip; -webkit-font-smoothing:antialiased;
   transition:background .5s var(--ease), color .5s var(--ease);
 }
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
 
-/* warm ambient background blobs */
 body::before{
   content:""; position:fixed; inset:0; z-index:-2; pointer-events:none;
   background:
-    radial-gradient(45vw 45vw at 82% -8%, rgba(255,93,143,.16), transparent 60%),
-    radial-gradient(40vw 40vw at -6% 22%, rgba(179,136,255,.14), transparent 60%),
-    radial-gradient(50vw 50vw at 60% 105%, rgba(255,199,95,.12), transparent 60%);
+    radial-gradient(50vw 50vw at 86% -6%, rgba(255,77,136,.16), transparent 60%),
+    radial-gradient(45vw 45vw at -8% 18%, rgba(168,123,255,.14), transparent 60%),
+    radial-gradient(55vw 55vw at 55% 108%, rgba(255,194,75,.12), transparent 60%);
 }
 
-.wrap{max-width:var(--maxw); margin:0 auto; padding-left:20px; padding-right:20px} /* horizontal only */
-section{padding:54px 0}
+.wrap{max-width:var(--maxw); margin:0 auto; padding-left:18px; padding-right:18px} /* horizontal only */
+section{padding:48px 0}
 
 /* ---- shared type ---- */
 .eyebrow{
-  font-family:var(--body); font-weight:600; font-size:.74rem; letter-spacing:.18em;
+  font-family:var(--body); font-weight:600; font-size:.72rem; letter-spacing:.16em;
   text-transform:uppercase; color:var(--rose); display:inline-flex; align-items:center; gap:8px;
 }
-.eyebrow::before{content:""; width:22px; height:2px; border-radius:2px; background:var(--grad)}
-h1,h2,h3{font-family:var(--display); font-weight:600; line-height:1.08; letter-spacing:-.01em}
-.sec-head{max-width:640px; margin-bottom:34px}
-.sec-head h2{font-size:clamp(1.9rem,6.4vw,3rem); margin:14px 0 12px}
-.sec-head p{color:var(--muted); font-size:1.02rem}
-.grad-text{
-  background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;
-}
+.eyebrow::before{content:""; width:20px; height:2px; border-radius:2px; background:var(--grad)}
+h1,h2,h3{font-family:var(--display); font-weight:600; line-height:1.07; letter-spacing:-.015em}
+.sec-head{max-width:620px; margin-bottom:28px}
+.sec-head h2{font-size:clamp(1.85rem,8vw,2.9rem); margin:12px 0 10px}
+.sec-head p{color:var(--muted); font-size:1rem}
+.grad-text{background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent}
 
 /* ---- buttons ---- */
-.btn{
-  display:inline-flex; align-items:center; gap:8px; font-weight:600; font-size:.96rem;
-  padding:13px 22px; border-radius:var(--r-pill); transition:transform .35s var(--ease), box-shadow .35s var(--ease), background .3s;
-}
+.btn{display:inline-flex; align-items:center; gap:8px; font-weight:600; font-size:.95rem;
+  padding:13px 22px; border-radius:var(--r-pill); transition:transform .35s var(--ease), box-shadow .35s var(--ease), background .3s, border-color .3s; will-change:transform}
 .btn-primary{background:var(--grad); color:#fff; box-shadow:0 12px 30px -10px var(--glow)}
-.btn-primary:hover{transform:translateY(-2px); box-shadow:0 18px 40px -10px var(--glow)}
+.btn-primary:hover{transform:translateY(-2px); box-shadow:0 18px 42px -10px var(--glow)}
 .btn-ghost{background:var(--surface); border:1px solid var(--border2); color:var(--text)}
 .btn-ghost:hover{transform:translateY(-2px); border-color:var(--rose)}
 
 /* ============================================================ NAV */
-#hdr{
-  position:sticky; top:0; z-index:60; height:var(--nav-h);
-  display:flex; align-items:center;
-  background:color-mix(in srgb, var(--bg) 78%, transparent);
-  backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
-  border-bottom:1px solid var(--border);
-}
+#hdr{position:sticky; top:0; z-index:60; height:var(--nav-h); display:flex; align-items:center;
+  background:color-mix(in srgb, var(--bg) 80%, transparent); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border)}
 #hdr .wrap{display:flex; align-items:center; justify-content:space-between; width:100%}
-.brand{display:flex; align-items:center; gap:11px; font-weight:600}
-.brand .mark{
-  width:38px; height:38px; border-radius:13px; background:var(--grad); color:#fff;
-  display:grid; place-items:center; font-family:var(--display); font-size:1.05rem; font-weight:600;
-  box-shadow:0 8px 20px -8px var(--glow);
-}
-.brand .nm{font-family:var(--display); font-size:1.06rem; letter-spacing:-.01em}
-.brand .nm small{display:block; font-family:var(--body); font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); font-weight:600}
+.brand{display:flex; align-items:center; gap:10px; font-weight:600; min-width:0}
+.brand .mark{width:36px; height:36px; border-radius:12px; background:var(--grad); color:#fff;
+  display:grid; place-items:center; font-family:var(--display); font-size:1rem; font-weight:600; flex:none; box-shadow:0 8px 20px -8px var(--glow)}
+.brand .nm{font-family:var(--display); font-size:1rem; letter-spacing:-.01em; line-height:1.1; white-space:nowrap}
+.brand .nm small{display:block; font-family:var(--body); font-size:.6rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-weight:600}
 .nav-links{display:none}
-.nav-right{display:flex; align-items:center; gap:10px}
-.toggle{
-  width:42px; height:42px; border-radius:var(--r-pill); border:1px solid var(--border2);
-  background:var(--surface); display:grid; place-items:center; font-size:1.05rem; transition:transform .4s var(--ease), border-color .3s;
-}
+.nav-right{display:flex; align-items:center; gap:9px}
+.toggle{width:40px; height:40px; border-radius:var(--r-pill); border:1px solid var(--border2); background:var(--surface);
+  display:grid; place-items:center; font-size:1rem; transition:transform .4s var(--ease), border-color .3s; flex:none}
 .toggle:hover{transform:rotate(-18deg) scale(1.05); border-color:var(--rose)}
 .nav-cta{display:none}
-.burger{
-  width:42px; height:42px; border-radius:13px; border:1px solid var(--border2);
-  background:var(--surface); display:grid; place-items:center; font-size:1.2rem;
-}
-/* mobile drawer */
-.drawer{
-  position:fixed; inset:0 0 0 auto; width:min(82vw,340px); z-index:80;
-  background:var(--surface); border-left:1px solid var(--border);
-  transform:translateX(110%); transition:transform .45s var(--ease);
-  padding:84px 26px 26px; display:flex; flex-direction:column; gap:6px;
-  box-shadow:-30px 0 60px -30px rgba(0,0,0,.4);
-}
+.burger{width:40px; height:40px; border-radius:12px; border:1px solid var(--border2); background:var(--surface);
+  display:grid; place-items:center; font-size:1.15rem; flex:none}
+.drawer{position:fixed; inset:0 0 0 auto; width:min(82vw,330px); z-index:80; background:var(--surface);
+  border-left:1px solid var(--border); transform:translateX(110%); transition:transform .45s var(--ease);
+  padding:80px 24px 24px; display:flex; flex-direction:column; gap:4px; box-shadow:-30px 0 60px -30px rgba(0,0,0,.4)}
 .drawer.open{transform:translateX(0)}
-.drawer a{padding:14px 12px; border-radius:12px; font-weight:600; font-size:1.08rem; transition:background .2s}
+.drawer a{padding:14px 12px; border-radius:12px; font-weight:600; font-size:1.06rem; transition:background .2s}
 .drawer a:hover{background:var(--surface2)}
-.drawer .btn{margin-top:14px; justify-content:center}
-.drawer-x{position:absolute; top:22px; right:22px; font-size:1.4rem; width:40px; height:40px; border-radius:12px; border:1px solid var(--border2)}
-.scrim{position:fixed; inset:0; z-index:70; background:rgba(20,10,25,.4); opacity:0; pointer-events:none; transition:opacity .4s}
+.drawer .btn{margin-top:12px; justify-content:center}
+.drawer-x{position:absolute; top:20px; right:20px; font-size:1.3rem; width:38px; height:38px; border-radius:12px; border:1px solid var(--border2)}
+.scrim{position:fixed; inset:0; z-index:70; background:rgba(20,10,25,.45); opacity:0; pointer-events:none; transition:opacity .4s}
 .scrim.show{opacity:1; pointer-events:auto}
 
 /* ============================================================ HERO */
-.hero{position:relative; padding-top:30px; padding-bottom:18px}
-.hero-eyebrow{margin-bottom:18px}
-.hero h1{font-size:clamp(2.4rem,10vw,4.3rem); margin-bottom:18px}
+.hero{position:relative; padding-top:18px; padding-bottom:6px; overflow:clip}
+.hero-eyebrow{margin-bottom:16px}
+.hero h1{font-size:clamp(2.35rem,11vw,4.3rem); margin-bottom:16px}
 .hero h1 .ital{font-style:italic; font-weight:500}
-.hero .lede{color:var(--muted); font-size:1.08rem; max-width:30ch; margin-bottom:22px}
+.hero .lede{color:var(--muted); font-size:1.04rem; max-width:34ch; margin-bottom:20px}
 .hero .lede b{color:var(--text); font-weight:600}
-.cap-row{display:flex; flex-wrap:wrap; gap:9px; justify-content:flex-start; margin-bottom:26px}
-.cap{
-  display:inline-flex; align-items:center; gap:7px; font-size:.82rem; font-weight:500;
-  padding:7px 13px; border-radius:var(--r-pill); background:var(--surface); border:1px solid var(--border2); color:var(--text);
-}
-.cap i{width:7px; height:7px; border-radius:50%; background:var(--grad)}
-.hero-cta{display:flex; flex-wrap:wrap; gap:12px}
+.cap-row{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px}
+.cap{display:inline-flex; align-items:center; gap:7px; font-size:.8rem; font-weight:500; padding:7px 13px;
+  border-radius:var(--r-pill); background:var(--surface); border:1px solid var(--border2); color:var(--text)}
+.cap i{width:7px; height:7px; border-radius:50%; background:var(--grad); flex:none}
+.hero-cta{display:flex; flex-wrap:wrap; gap:11px}
 
-/* ---- THE LIVING FEED phone (signature) ---- */
-.feed-stage{position:relative; margin:46px auto 8px; width:min(310px,86%); aspect-ratio:300/600}
-.phone{
-  position:absolute; inset:0; border-radius:42px; background:var(--surface);
-  border:1px solid var(--border2); box-shadow:var(--ph-shadow); overflow:hidden;
-  padding:14px 13px;
-}
-.phone::before{ /* notch */
-  content:""; position:absolute; top:11px; left:50%; transform:translateX(-50%);
-  width:104px; height:22px; border-radius:14px; background:var(--bg2); z-index:5;
-}
-.ph-top{display:flex; align-items:center; justify-content:space-between; font-size:.62rem; color:var(--muted); padding:2px 8px 10px; font-weight:600}
-.ph-prof{display:flex; align-items:center; gap:13px; padding:4px 4px 12px}
-.story-ring{
-  width:62px; height:62px; border-radius:50%; padding:3px; flex:none;
-  background:conic-gradient(from 0deg, var(--rose), var(--coral), var(--gold), var(--lilac), var(--rose));
-}
-.story-ring .disc{
-  width:100%; height:100%; border-radius:50%; overflow:hidden; border:2px solid var(--surface);
-  background:var(--grad-soft); display:grid; place-items:center;
-  font-family:var(--display); font-weight:600; font-size:1.2rem; color:var(--rose);
-}
+/* staggered hero entrance */
+.hero-head>*{opacity:0; transform:translateY(20px); animation:rise .8s var(--ease) forwards}
+.hero-head>*:nth-child(1){animation-delay:.05s}
+.hero-head>*:nth-child(2){animation-delay:.16s}
+.hero-head>*:nth-child(3){animation-delay:.28s}
+.hero-head>*:nth-child(4){animation-delay:.4s}
+.hero-head>*:nth-child(5){animation-delay:.52s}
+@keyframes rise{to{opacity:1; transform:none}}
+
+/* ---- THE LIVING FEED phone ---- */
+.feed-stage{position:relative; margin:42px auto 14px; width:min(300px,84%); aspect-ratio:300/610;
+  opacity:0; animation:phonein 1s var(--ease) .35s forwards}
+@keyframes phonein{from{opacity:0; transform:translateY(34px) scale(.94)}to{opacity:1; transform:none}}
+.phone{position:absolute; inset:0; border-radius:42px; background:var(--surface); border:1px solid var(--border2);
+  box-shadow:var(--ph-shadow); overflow:hidden; padding:13px 12px}
+.phone::before{content:""; position:absolute; top:11px; left:50%; transform:translateX(-50%);
+  width:100px; height:21px; border-radius:14px; background:var(--bg2); z-index:5}
+.ph-top{display:flex; align-items:center; justify-content:space-between; font-size:.6rem; color:var(--muted); padding:2px 8px 10px; font-weight:600}
+.ph-prof{display:flex; align-items:center; gap:12px; padding:4px 4px 12px; min-width:0}
+.story-ring{width:60px; height:60px; border-radius:50%; padding:3px; flex:none;
+  background:conic-gradient(from 0deg, var(--rose), var(--coral), var(--gold), var(--lilac), var(--rose))}
+.story-ring .disc{width:100%; height:100%; border-radius:50%; overflow:hidden; border:2px solid var(--surface);
+  background:var(--grad-soft); display:grid; place-items:center; font-family:var(--display); font-weight:600; font-size:1.15rem; color:var(--rose)}
 .story-ring .disc img{width:100%; height:100%; object-fit:cover; object-position:50% 30%}
-.ph-meta .h{font-family:var(--display); font-size:1.02rem; font-weight:600; display:flex; align-items:center; gap:5px}
-.ph-meta .h .tick{width:15px; height:15px; border-radius:50%; background:var(--grad); display:grid; place-items:center; font-size:.55rem; color:#fff}
-.ph-meta .s{font-size:.72rem; color:var(--muted)}
-.ph-stats{display:flex; gap:0; padding:2px 6px 13px; border-bottom:1px solid var(--border)}
-.ph-stats .st{flex:1; text-align:center}
-.ph-stats .st .n{font-weight:700; font-size:.98rem}
-.ph-stats .st .l{font-size:.6rem; color:var(--muted); letter-spacing:.04em; text-transform:uppercase}
-.ph-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:5px; padding:12px 4px 4px}
-.ph-tile{aspect-ratio:1; border-radius:9px; position:relative; overflow:hidden; background:var(--grad-soft)}
-.ph-tile span{position:absolute; inset:0; display:grid; place-items:center; font-size:1.2rem}
-.ph-tile.g1{background:linear-gradient(135deg,#FF5D8F,#FF8A5B)}
-.ph-tile.g2{background:linear-gradient(135deg,#B388FF,#FF5D8F)}
-.ph-tile.g3{background:linear-gradient(135deg,#FFC75F,#FF8A5B)}
-.ph-tile.g4{background:linear-gradient(135deg,#FF8A5B,#FFC75F)}
-.ph-tile.g5{background:linear-gradient(135deg,#B388FF,#FFC75F)}
-.ph-tile.g6{background:linear-gradient(135deg,#FF5D8F,#B388FF)}
+.ph-meta{min-width:0}
+.ph-meta .h{font-family:var(--display); font-size:1rem; font-weight:600; display:flex; align-items:center; gap:5px; white-space:nowrap}
+.ph-meta .h .tick{width:14px; height:14px; border-radius:50%; background:var(--grad); display:grid; place-items:center; font-size:.5rem; color:#fff; flex:none}
+.ph-meta .s{font-size:.7rem; color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.ph-stats{display:flex; padding:2px 4px 12px; border-bottom:1px solid var(--border)}
+.ph-stats .st{flex:1; text-align:center; min-width:0}
+.ph-stats .st .n{font-weight:700; font-size:.95rem}
+.ph-stats .st .l{font-size:.58rem; color:var(--muted); letter-spacing:.03em; text-transform:uppercase}
+.ph-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:5px; padding:11px 4px 4px}
+.ph-tile{aspect-ratio:1; border-radius:9px; position:relative; overflow:hidden}
+.ph-tile span{position:absolute; inset:0; display:grid; place-items:center; font-size:1.15rem}
+.ph-tile.g1{background:linear-gradient(135deg,#FF4D88,#FF7A4D)}
+.ph-tile.g2{background:linear-gradient(135deg,#A87BFF,#FF4D88)}
+.ph-tile.g3{background:linear-gradient(135deg,#FFC24B,#FF7A4D)}
+.ph-tile.g4{background:linear-gradient(135deg,#FF7A4D,#FFC24B)}
+.ph-tile.g5{background:linear-gradient(135deg,#A87BFF,#FFC24B)}
+.ph-tile.g6{background:linear-gradient(135deg,#FF4D88,#A87BFF)}
+.ph-like{display:flex; align-items:center; gap:6px; padding:11px 8px 4px; font-size:.74rem; color:var(--muted)}
+.ph-like b{color:var(--text); font-weight:700}
 
-/* floating engagement bubbles */
-.bubble{
-  position:absolute; z-index:6; background:var(--surface); border:1px solid var(--border2);
-  border-radius:14px; padding:9px 13px; box-shadow:var(--card-shadow); font-size:.78rem; font-weight:600;
-  display:flex; align-items:center; gap:7px; white-space:nowrap;
-}
-.bubble .ic{font-size:1rem}
-.bubble .sub{display:block; font-size:.62rem; color:var(--muted); font-weight:500}
-.b-eng{top:-3%; left:-7%}
-.b-token{bottom:16%; right:-11%}
-.b-heart{top:46%; right:-8%; padding:11px; border-radius:50%; font-size:1.05rem}
+.bubble{position:absolute; z-index:6; background:var(--surface); border:1px solid var(--border2);
+  border-radius:14px; padding:9px 12px; box-shadow:var(--card-shadow); font-size:.76rem; font-weight:600;
+  display:flex; align-items:center; gap:7px; white-space:nowrap}
+.bubble .ic{font-size:.98rem}
+.bubble .sub{display:block; font-size:.6rem; color:var(--muted); font-weight:500}
+.b-eng{top:-3%; left:-6%}
+.b-token{bottom:15%; right:-9%}
+.b-heart{top:46%; right:-7%; padding:11px; border-radius:50%; font-size:1rem}
+/* floating hearts */
+.hearts{position:absolute; inset:0; pointer-events:none; z-index:4}
+.hearts i{position:absolute; bottom:18%; font-size:1rem; opacity:0; animation:floatUp 4.5s ease-in infinite}
+.hearts i:nth-child(1){left:18%; animation-delay:0s}
+.hearts i:nth-child(2){left:48%; animation-delay:1.5s}
+.hearts i:nth-child(3){left:74%; animation-delay:3s}
+@keyframes floatUp{0%{opacity:0; transform:translateY(0) scale(.6)}15%{opacity:.9}100%{opacity:0; transform:translateY(-150px) scale(1.1)}}
 
-/* ============================================================ PROOF */
-#proof{padding-top:24px}
-.proof{
-  display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--border);
-  border:1px solid var(--border); border-radius:var(--r-lg); overflow:hidden;
-}
-.proof .p{background:var(--surface); padding:22px 16px; text-align:center}
-.proof .p .n{font-family:var(--display); font-size:clamp(1.6rem,7vw,2.3rem); font-weight:600}
-.proof .p .l{font-size:.76rem; color:var(--muted); margin-top:3px; line-height:1.4}
+/* ============================================================ MARQUEE */
+.marquee{position:relative; padding:16px 0; border-top:1px solid var(--border); border-bottom:1px solid var(--border);
+  overflow:hidden; background:var(--surface2)}
+.marquee::before,.marquee::after{content:""; position:absolute; top:0; bottom:0; width:60px; z-index:2}
+.marquee::before{left:0; background:linear-gradient(90deg,var(--surface2),transparent)}
+.marquee::after{right:0; background:linear-gradient(270deg,var(--surface2),transparent)}
+.mq-track{display:flex; gap:0; width:max-content; animation:marq 26s linear infinite}
+.mq-track .it{font-family:var(--display); font-style:italic; font-size:1.15rem; font-weight:500; color:var(--muted); padding:0 26px; white-space:nowrap; display:flex; align-items:center; gap:26px}
+.mq-track .it::after{content:"✦"; color:var(--rose); font-style:normal; font-size:.8rem}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* ============================================================ BENTO STATS */
+.bento{display:grid; grid-template-columns:repeat(2,1fr); gap:11px}
+.tile{position:relative; overflow:hidden; border-radius:var(--r-lg); border:1px solid var(--border);
+  background:var(--surface); padding:20px 18px; transition:transform .4s var(--ease), box-shadow .4s}
+.tile:hover{transform:translateY(-3px); box-shadow:var(--card-shadow)}
+.tile .n{font-family:var(--display); font-size:clamp(1.7rem,7vw,2.4rem); font-weight:600; line-height:1}
+.tile .l{font-size:.8rem; color:var(--muted); margin-top:6px}
+.tile.span2{grid-column:span 2}
+.tile.hot{background:var(--grad); border:none; color:#fff}
+.tile.hot .l{color:rgba(255,255,255,.9)}
+.tile.warm{background:var(--grad-soft); border-color:var(--border2)}
+.tile .pin{position:absolute; top:14px; right:14px; font-size:1.1rem; opacity:.85}
 
 /* ============================================================ SERVICES */
-.svc-grid{display:grid; grid-template-columns:1fr; gap:16px}
-.svc{
-  position:relative; background:var(--surface); border:1px solid var(--border); border-radius:var(--r-lg);
-  padding:26px 22px; overflow:hidden; transition:transform .4s var(--ease), border-color .3s, box-shadow .4s;
-}
+.svc-grid{display:grid; grid-template-columns:1fr; gap:14px}
+.svc{position:relative; background:var(--surface); border:1px solid var(--border); border-radius:var(--r-lg);
+  padding:24px 20px; overflow:hidden; transition:transform .4s var(--ease), border-color .3s, box-shadow .4s}
 .svc:hover{transform:translateY(-4px); border-color:var(--border2); box-shadow:var(--card-shadow)}
-.svc .num{font-family:var(--display); font-style:italic; font-size:1rem; color:var(--rose)}
-.svc .ic{font-size:1.7rem; margin:8px 0 12px}
-.svc h3{font-size:1.32rem; margin-bottom:9px}
-.svc p{color:var(--muted); font-size:.94rem}
-.svc .tags{display:flex; flex-wrap:wrap; gap:6px; margin-top:14px}
-.svc .tags span{font-size:.72rem; padding:5px 10px; border-radius:var(--r-pill); background:var(--surface2); border:1px solid var(--border); color:var(--muted)}
+.svc::after{content:""; position:absolute; inset:0 0 auto 0; height:3px; background:var(--grad); transform:scaleX(0); transform-origin:left; transition:transform .5s var(--ease)}
+.svc:hover::after{transform:scaleX(1)}
+.svc .num{font-family:var(--display); font-style:italic; font-size:.95rem; color:var(--rose)}
+.svc .ic{font-size:1.65rem; margin:6px 0 11px}
+.svc h3{font-size:1.28rem; margin-bottom:8px}
+.svc p{color:var(--muted); font-size:.92rem}
+.svc .tags{display:flex; flex-wrap:wrap; gap:6px; margin-top:13px}
+.svc .tags span{font-size:.71rem; padding:5px 10px; border-radius:var(--r-pill); background:var(--surface2); border:1px solid var(--border); color:var(--muted)}
 
-/* ============================================================ WORK / CASE STUDIES */
-.work-grid{display:grid; grid-template-columns:1fr; gap:18px}
-.proj{
-  position:relative; border:1px solid var(--border); border-radius:var(--r-lg); overflow:hidden;
-  background:var(--surface); transition:transform .4s var(--ease), box-shadow .4s, border-color .3s;
-}
+/* ============================================================ WORK */
+.work-grid{display:grid; grid-template-columns:1fr; gap:16px}
+.proj{position:relative; border:1px solid var(--border); border-radius:var(--r-lg); overflow:hidden;
+  background:var(--surface); transition:transform .4s var(--ease), box-shadow .4s, border-color .3s}
 .proj:hover{transform:translateY(-4px); box-shadow:var(--card-shadow); border-color:var(--border2)}
-.proj .cover{height:150px; position:relative; overflow:hidden; display:grid; place-items:center}
-.proj .cover .emoji{font-size:3rem; filter:drop-shadow(0 8px 16px rgba(0,0,0,.2))}
-.proj .cover .tag{position:absolute; top:12px; left:12px; font-size:.68rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; background:rgba(255,255,255,.92); color:#2B2330; padding:5px 11px; border-radius:var(--r-pill)}
-.cv1{background:linear-gradient(135deg,#FF5D8F,#FF8A5B)}
-.cv2{background:linear-gradient(135deg,#B388FF,#FF5D8F)}
-.cv3{background:linear-gradient(135deg,#FFC75F,#FF8A5B)}
-.cv4{background:linear-gradient(135deg,#B388FF,#FFC75F)}
-.cv5{background:linear-gradient(135deg,#FF8A5B,#FFC75F)}
-.proj .body{padding:20px 20px 22px}
-.proj .body .role{font-size:.76rem; color:var(--rose); font-weight:600; letter-spacing:.04em}
-.proj .body h3{font-size:1.3rem; margin:6px 0 8px}
-.proj .body p{color:var(--muted); font-size:.92rem; margin-bottom:14px}
-.proj .stats{display:flex; gap:18px; flex-wrap:wrap}
-.proj .stats .m .v{font-family:var(--display); font-size:1.25rem; font-weight:600; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent}
-.proj .stats .m .k{font-size:.68rem; color:var(--muted); text-transform:uppercase; letter-spacing:.05em}
+.proj .cover{height:140px; position:relative; overflow:hidden; display:grid; place-items:center}
+.proj .cover .emoji{font-size:2.8rem; filter:drop-shadow(0 8px 16px rgba(0,0,0,.22)); transition:transform .5s var(--ease)}
+.proj:hover .cover .emoji{transform:scale(1.12) rotate(-5deg)}
+.proj .cover .tag{position:absolute; top:12px; left:12px; font-size:.66rem; font-weight:700; letter-spacing:.05em;
+  text-transform:uppercase; background:rgba(255,255,255,.94); color:#241C2B; padding:5px 11px; border-radius:var(--r-pill)}
+.proj .cover .yr{position:absolute; top:12px; right:12px; font-size:.66rem; font-weight:600; color:#fff; background:rgba(0,0,0,.25); padding:5px 10px; border-radius:var(--r-pill); backdrop-filter:blur(4px)}
+.cv1{background:linear-gradient(135deg,#A87BFF,#FF4D88)}
+.cv2{background:linear-gradient(135deg,#FF7A4D,#FFC24B)}
+.cv3{background:linear-gradient(135deg,#FF4D88,#FF7A4D)}
+.cv4{background:linear-gradient(135deg,#A87BFF,#FFC24B)}
+.cv5{background:linear-gradient(135deg,#FFC24B,#FF7A4D)}
+.proj .body{padding:18px 18px 20px}
+.proj .body .role{font-size:.74rem; color:var(--rose); font-weight:600; letter-spacing:.03em}
+.proj .body h3{font-size:1.24rem; margin:5px 0 8px; line-height:1.15}
+.proj .body p{color:var(--muted); font-size:.9rem; margin-bottom:14px}
+.proj .stats{display:flex; gap:16px; flex-wrap:wrap}
+.proj .stats .m{min-width:0}
+.proj .stats .m .v{font-family:var(--display); font-size:1.2rem; font-weight:600; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent}
+.proj .stats .m .k{font-size:.66rem; color:var(--muted); text-transform:uppercase; letter-spacing:.04em}
 
-/* ============================================================ BRANDS */
-.brands-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:12px}
-.brand-card{
-  display:flex; align-items:center; gap:13px; padding:16px; border-radius:var(--r);
-  background:var(--surface); border:1px solid var(--border); transition:transform .35s var(--ease), border-color .3s;
-}
+/* ============================================================ BRANDS (alignment-safe) */
+.brands-grid{display:grid; grid-template-columns:1fr; gap:11px}
+.brand-card{display:flex; align-items:center; gap:12px; padding:15px; border-radius:var(--r);
+  background:var(--surface); border:1px solid var(--border); transition:transform .35s var(--ease), border-color .3s; min-width:0}
 .brand-card:hover{transform:translateY(-3px); border-color:var(--rose)}
 .brand-card .logo{width:38px; height:38px; border-radius:11px; flex:none; object-fit:contain; background:var(--surface2); padding:6px; border:1px solid var(--border)}
 .brand-card .mono{width:38px; height:38px; border-radius:11px; flex:none; display:none; place-items:center; font-family:var(--display); font-weight:600; color:#fff; background:var(--grad)}
 .brand-card.noimg .logo{display:none}
 .brand-card.noimg .mono{display:grid}
-.brand-card .bn{font-weight:600; font-size:.96rem; line-height:1.2}
-.brand-card .bs{font-size:.72rem; color:var(--muted)}
+.brand-card .bx{min-width:0; flex:1}
+.brand-card .bn{display:block; font-weight:600; font-size:.94rem; line-height:1.2; overflow-wrap:anywhere}
+.brand-card .bs{display:block; font-size:.71rem; color:var(--muted); overflow-wrap:anywhere; margin-top:1px}
 
 /* ============================================================ SKILLS */
-.skills-grid{display:grid; grid-template-columns:1fr; gap:22px}
-.skill-card{background:var(--surface); border:1px solid var(--border); border-radius:var(--r-lg); padding:24px 22px}
-.skill-card h3{font-size:1.05rem; margin-bottom:18px; display:flex; align-items:center; gap:9px}
-.skill-card h3 .ic{font-size:1.2rem}
-.bars .bar{margin-bottom:15px}
+.skills-grid{display:grid; grid-template-columns:1fr; gap:18px}
+.skill-card{background:var(--surface); border:1px solid var(--border); border-radius:var(--r-lg); padding:22px 20px}
+.skill-card h3{font-size:1.02rem; margin-bottom:16px; display:flex; align-items:center; gap:9px}
+.skill-card h3 .ic{font-size:1.15rem}
+.bars .bar{margin-bottom:14px}
 .bars .bar:last-child{margin-bottom:0}
-.bars .top{display:flex; justify-content:space-between; font-size:.86rem; font-weight:500; margin-bottom:6px}
-.bars .top .pct{color:var(--muted); font-weight:600}
+.bars .top{display:flex; justify-content:space-between; font-size:.85rem; font-weight:500; margin-bottom:6px; gap:8px}
+.bars .top span:first-child{min-width:0; overflow-wrap:anywhere}
+.bars .top .pct{color:var(--muted); font-weight:600; flex:none}
 .bars .track{height:8px; border-radius:8px; background:var(--surface2); overflow:hidden; border:1px solid var(--border)}
 .bars .fill{height:100%; border-radius:8px; background:var(--grad); width:0; transition:width 1.3s var(--ease)}
 .cloud{display:flex; flex-wrap:wrap; gap:8px}
-.cloud span{font-size:.82rem; padding:8px 13px; border-radius:var(--r-pill); background:var(--surface2); border:1px solid var(--border); transition:transform .3s, border-color .3s, color .3s}
+.cloud span{font-size:.81rem; padding:8px 13px; border-radius:var(--r-pill); background:var(--surface2); border:1px solid var(--border); transition:transform .3s, border-color .3s, color .3s}
 .cloud span:hover{transform:translateY(-2px); border-color:var(--rose); color:var(--rose)}
 
 /* ============================================================ ABOUT */
-.about-grid{display:grid; grid-template-columns:1fr; gap:26px}
-.about-photo{
-  position:relative; border-radius:var(--r-lg); overflow:hidden; aspect-ratio:0.86;
-  background:var(--grad-soft); border:1px solid var(--border2); max-width:300px; margin:0 auto; width:100%;
-}
+.about-grid{display:grid; grid-template-columns:1fr; gap:24px}
+.about-photo{position:relative; border-radius:var(--r-lg); overflow:hidden; aspect-ratio:.86;
+  background:var(--grad-soft); border:1px solid var(--border2); max-width:300px; margin:0 auto; width:100%}
 .about-photo img{width:100%; height:100%; object-fit:cover}
-.about-photo .ph{position:absolute; inset:0; display:grid; place-items:center; text-align:center; color:var(--muted); font-size:.82rem; padding:20px}
-.about-photo .ph .ring{font-size:2.4rem; margin-bottom:10px}
+.about-photo .ph{position:absolute; inset:0; display:grid; place-items:center; text-align:center; color:var(--muted); font-size:.8rem; padding:20px}
+.about-photo .ph .ring{font-size:2.3rem; margin-bottom:10px}
 .about-photo.img-ok .ph{display:none}
-.about-text h2{font-size:clamp(1.8rem,6vw,2.6rem); margin:12px 0 14px}
-.about-text p{color:var(--muted); margin-bottom:14px}
+.about-text h2{font-size:clamp(1.8rem,7vw,2.6rem); margin:10px 0 14px}
+.about-text p{color:var(--muted); margin-bottom:13px; font-size:.98rem}
 .about-text p b{color:var(--text)}
-.facts{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:22px 0}
-.fact{background:var(--surface); border:1px solid var(--border); border-radius:var(--r); padding:14px 15px}
-.fact .k{font-size:.68rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin-bottom:4px}
-.fact .v{font-weight:600; font-size:.92rem}
-.timeline{position:relative; padding-left:22px; margin-top:8px}
+.facts{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:20px 0}
+.fact{background:var(--surface); border:1px solid var(--border); border-radius:var(--r); padding:13px 14px; min-width:0}
+.fact .k{font-size:.66rem; text-transform:uppercase; letter-spacing:.07em; color:var(--muted); margin-bottom:4px}
+.fact .v{font-weight:600; font-size:.9rem; overflow-wrap:anywhere}
+.timeline{position:relative; padding-left:22px; margin-top:6px}
 .timeline::before{content:""; position:absolute; left:5px; top:6px; bottom:6px; width:2px; background:var(--grad)}
 .tl{position:relative; padding:0 0 18px}
 .tl:last-child{padding-bottom:0}
 .tl::before{content:""; position:absolute; left:-21px; top:5px; width:11px; height:11px; border-radius:50%; background:var(--rose); border:2px solid var(--bg)}
-.tl .when{font-size:.72rem; color:var(--rose); font-weight:600; letter-spacing:.04em}
-.tl .what{font-weight:600; font-size:.98rem; margin-top:2px}
-.tl .co{font-size:.82rem; color:var(--muted)}
+.tl .when{font-size:.71rem; color:var(--rose); font-weight:600; letter-spacing:.03em}
+.tl .what{font-weight:600; font-size:.96rem; margin-top:2px}
+.tl .co{font-size:.81rem; color:var(--muted)}
+
+/* ============================================================ HONOURS */
+.honours-grid{display:grid; grid-template-columns:1fr; gap:12px}
+.honour{display:flex; gap:14px; align-items:flex-start; background:var(--surface); border:1px solid var(--border);
+  border-radius:var(--r); padding:18px; transition:transform .35s var(--ease), border-color .3s}
+.honour:hover{transform:translateY(-3px); border-color:var(--rose)}
+.honour .ic{font-size:1.5rem; flex:none}
+.honour .hn{font-weight:600; font-size:.98rem; margin-bottom:3px}
+.honour .hd{font-size:.84rem; color:var(--muted)}
 
 /* ============================================================ CONTACT */
-#contact .card{
-  position:relative; overflow:hidden; border-radius:var(--r-lg); padding:42px 26px; text-align:center;
-  background:var(--grad-soft); border:1px solid var(--border2);
-}
+#contact .card{position:relative; overflow:hidden; border-radius:var(--r-xl); padding:40px 22px; text-align:center;
+  background:var(--grad-soft); border:1px solid var(--border2)}
 #contact .card::before{content:""; position:absolute; inset:0; z-index:-1; background:
-  radial-gradient(40% 60% at 20% 0%, rgba(255,93,143,.2), transparent),
-  radial-gradient(40% 60% at 85% 100%, rgba(179,136,255,.2), transparent);}
-#contact h2{font-size:clamp(1.7rem,6.5vw,2.7rem); margin-bottom:14px}
-#contact p{color:var(--muted); max-width:46ch; margin:0 auto 24px}
-.contact-actions{display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-bottom:22px}
-.contact-meta{display:flex; flex-wrap:wrap; gap:8px 18px; justify-content:center; font-size:.88rem}
-.contact-meta a{color:var(--muted); transition:color .2s}
+  radial-gradient(40% 60% at 18% 0%, rgba(255,77,136,.22), transparent),
+  radial-gradient(40% 60% at 86% 100%, rgba(168,123,255,.22), transparent)}
+#contact h2{font-size:clamp(1.7rem,7.5vw,2.7rem); margin-bottom:12px}
+#contact p{color:var(--muted); max-width:44ch; margin:0 auto 22px; font-size:.98rem}
+.contact-actions{display:flex; flex-wrap:wrap; gap:11px; justify-content:center; margin-bottom:20px}
+.contact-meta{display:flex; flex-wrap:wrap; gap:8px 16px; justify-content:center; font-size:.86rem}
+.contact-meta a{color:var(--muted); transition:color .2s; overflow-wrap:anywhere}
 .contact-meta a:hover{color:var(--rose)}
 
 /* ============================================================ FOOTER */
-footer{border-top:1px solid var(--border); padding:30px 0; margin-top:10px}
-.foot{display:flex; flex-direction:column; gap:16px; text-align:center; align-items:center}
+footer{border-top:1px solid var(--border); padding:28px 0; margin-top:8px}
+.foot{display:flex; flex-direction:column; gap:14px; text-align:center; align-items:center}
 .foot .logo{display:flex; align-items:center; gap:9px; font-family:var(--display); font-weight:600}
-.foot .logo .mark{width:30px; height:30px; border-radius:10px; background:var(--grad); color:#fff; display:grid; place-items:center; font-size:.85rem}
-.foot .copy{font-size:.8rem; color:var(--muted)}
+.foot .logo .mark{width:28px; height:28px; border-radius:9px; background:var(--grad); color:#fff; display:grid; place-items:center; font-size:.8rem}
+.foot .copy{font-size:.78rem; color:var(--muted)}
 .foot .social{display:flex; gap:10px}
-.foot .social a{width:38px; height:38px; border-radius:11px; border:1px solid var(--border2); display:grid; place-items:center; font-weight:600; font-size:.85rem; transition:transform .3s, border-color .3s, color .3s}
+.foot .social a{width:38px; height:38px; border-radius:11px; border:1px solid var(--border2); display:grid; place-items:center; font-weight:600; font-size:.82rem; transition:transform .3s, border-color .3s, color .3s}
 .foot .social a:hover{transform:translateY(-2px); border-color:var(--rose); color:var(--rose)}
 
 /* ============================================================ FLOATING */
-.to-top{
-  position:fixed; left:18px; bottom:18px; z-index:55; width:46px; height:46px; border-radius:50%;
-  background:var(--surface); border:1px solid var(--border2); display:grid; place-items:center; font-size:1.1rem;
-  box-shadow:var(--card-shadow); opacity:0; pointer-events:none; transform:translateY(10px); transition:opacity .4s, transform .4s;
-}
+.to-top{position:fixed; left:16px; bottom:16px; z-index:55; width:44px; height:44px; border-radius:50%;
+  background:var(--surface); border:1px solid var(--border2); display:grid; place-items:center; font-size:1.05rem;
+  box-shadow:var(--card-shadow); opacity:0; pointer-events:none; transform:translateY(10px); transition:opacity .4s, transform .4s}
 .to-top.show{opacity:1; pointer-events:auto; transform:translateY(0)}
-.chat-fab{
-  position:fixed; right:18px; bottom:18px; z-index:55; width:58px; height:58px; border-radius:50%;
-  background:var(--grad); color:#fff; display:grid; place-items:center; font-size:1.4rem;
-  box-shadow:0 16px 36px -10px var(--glow); transition:transform .4s var(--ease);
-}
+.chat-fab{position:fixed; right:16px; bottom:16px; z-index:55; width:56px; height:56px; border-radius:50%;
+  background:var(--grad); color:#fff; display:grid; place-items:center; font-size:1.35rem; box-shadow:0 16px 36px -10px var(--glow); transition:transform .4s var(--ease)}
 .chat-fab:hover{transform:scale(1.08) rotate(-6deg)}
-.chat-fab .badge{position:absolute; top:2px; right:2px; width:14px; height:14px; border-radius:50%; background:var(--gold); border:2px solid var(--bg)}
-.chat-panel{
-  position:fixed; right:14px; bottom:84px; z-index:60; width:min(360px,calc(100vw - 28px)); height:min(540px,70vh);
-  background:var(--surface); border:1px solid var(--border2); border-radius:24px; overflow:hidden;
-  display:flex; flex-direction:column; box-shadow:0 30px 70px -20px rgba(0,0,0,.45);
-  opacity:0; pointer-events:none; transform:translateY(16px) scale(.97); transform-origin:bottom right; transition:.4s var(--ease);
-}
+.chat-fab .badge{position:absolute; top:2px; right:2px; width:13px; height:13px; border-radius:50%; background:var(--gold); border:2px solid var(--bg)}
+.chat-panel{position:fixed; right:12px; bottom:80px; z-index:60; width:min(360px,calc(100vw - 24px)); height:min(540px,72vh);
+  background:var(--surface); border:1px solid var(--border2); border-radius:24px; overflow:hidden; display:flex; flex-direction:column;
+  box-shadow:0 30px 70px -20px rgba(0,0,0,.45); opacity:0; pointer-events:none; transform:translateY(16px) scale(.97); transform-origin:bottom right; transition:.4s var(--ease)}
 .chat-panel.open{opacity:1; pointer-events:auto; transform:translateY(0) scale(1)}
-.chat-head{display:flex; align-items:center; gap:11px; padding:16px; background:var(--grad-soft); border-bottom:1px solid var(--border)}
-.chat-head .av{width:40px; height:40px; border-radius:50%; background:var(--grad); color:#fff; display:grid; place-items:center; font-family:var(--display); font-weight:600}
-.chat-head .ti{font-weight:600; font-size:.96rem; line-height:1.2}
-.chat-head .ti small{display:block; font-size:.72rem; color:var(--muted); font-weight:500}
+.chat-head{display:flex; align-items:center; gap:11px; padding:15px; background:var(--grad-soft); border-bottom:1px solid var(--border)}
+.chat-head .av{width:38px; height:38px; border-radius:50%; background:var(--grad); color:#fff; display:grid; place-items:center; font-family:var(--display); font-weight:600; flex:none}
+.chat-head .ti{font-weight:600; font-size:.94rem; line-height:1.2; min-width:0}
+.chat-head .ti small{display:block; font-size:.7rem; color:var(--muted); font-weight:500}
 .chat-head .ti small i{color:#2ecc71; font-style:normal}
-.chat-head .x{margin-left:auto; width:34px; height:34px; border-radius:10px; border:1px solid var(--border2); display:grid; place-items:center}
-.chat-log{flex:1; overflow-y:auto; padding:16px; display:flex; flex-direction:column; gap:11px}
-.msg{max-width:82%; padding:11px 14px; border-radius:16px; font-size:.9rem; line-height:1.5; animation:popin .3s var(--ease)}
+.chat-head .x{margin-left:auto; width:32px; height:32px; border-radius:10px; border:1px solid var(--border2); display:grid; place-items:center; flex:none}
+.chat-log{flex:1; overflow-y:auto; padding:15px; display:flex; flex-direction:column; gap:10px}
+.msg{max-width:84%; padding:11px 14px; border-radius:16px; font-size:.89rem; line-height:1.5; animation:popin .3s var(--ease); overflow-wrap:anywhere}
 .msg.bot{background:var(--surface2); border:1px solid var(--border); border-bottom-left-radius:5px; align-self:flex-start}
 .msg.me{background:var(--grad); color:#fff; border-bottom-right-radius:5px; align-self:flex-end}
 .msg.bot a{color:var(--rose); font-weight:600}
-@keyframes popin{from{opacity:0; transform:translateY(8px)}to{opacity:1; transform:translateY(0)}}
+@keyframes popin{from{opacity:0; transform:translateY(8px)}to{opacity:1; transform:none}}
 .quick{display:flex; flex-wrap:wrap; gap:7px; padding:0 14px 10px}
-.quick button{font-size:.78rem; padding:7px 12px; border-radius:var(--r-pill); background:var(--surface2); border:1px solid var(--border2); transition:border-color .2s, color .2s}
+.quick button{font-size:.77rem; padding:7px 12px; border-radius:var(--r-pill); background:var(--surface2); border:1px solid var(--border2); transition:border-color .2s, color .2s}
 .quick button:hover{border-color:var(--rose); color:var(--rose)}
 .chat-input{display:flex; gap:8px; padding:12px 14px; border-top:1px solid var(--border)}
-.chat-input input{flex:1; background:var(--surface2); border:1px solid var(--border2); border-radius:var(--r-pill); padding:11px 16px; color:var(--text); font-family:inherit; font-size:.9rem; outline:none}
+.chat-input input{flex:1; min-width:0; background:var(--surface2); border:1px solid var(--border2); border-radius:var(--r-pill); padding:11px 16px; color:var(--text); font-family:inherit; font-size:.88rem; outline:none}
 .chat-input input:focus{border-color:var(--rose)}
-.chat-input button{width:42px; height:42px; border-radius:50%; background:var(--grad); color:#fff; flex:none; font-size:1rem}
+.chat-input button{width:42px; height:42px; border-radius:50%; background:var(--grad); color:#fff; flex:none; font-size:.95rem}
 .typing{display:flex; gap:4px; padding:13px 16px}
 .typing span{width:7px; height:7px; border-radius:50%; background:var(--muted); animation:blink 1.2s infinite}
-.typing span:nth-child(2){animation-delay:.2s}
-.typing span:nth-child(3){animation-delay:.4s}
+.typing span:nth-child(2){animation-delay:.2s}.typing span:nth-child(3){animation-delay:.4s}
 @keyframes blink{0%,60%,100%{opacity:.3}30%{opacity:1}}
 
 /* ---- scroll reveal ---- */
-.reveal{opacity:0; transform:translateY(22px); transition:opacity .7s var(--ease), transform .7s var(--ease)}
+.reveal{opacity:0; transform:translateY(24px); transition:opacity .7s var(--ease), transform .7s var(--ease)}
 .reveal.in{opacity:1; transform:none}
 .scroll-prog{position:fixed; top:0; left:0; height:3px; width:0; background:var(--grad); z-index:90; transition:width .1s}
 
-/* =========================================================================
-   ANIMATIONS (gated by reduced-motion below)
-   ========================================================================= */
-.story-ring{animation:spin 14s linear infinite}
+/* ---- ambient anims ---- */
+.story-ring{animation:spin 16s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-.story-ring .disc{animation:spin-back 14s linear infinite}
+.story-ring .disc{animation:spin-back 16s linear infinite}
 @keyframes spin-back{to{transform:rotate(-360deg)}}
 .bubble{animation:floaty 5s var(--ease) infinite}
-.b-token{animation-delay:1.2s}
-.b-heart{animation-delay:.6s}
-@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.b-token{animation-delay:1.2s}.b-heart{animation-delay:.6s}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 .ph-tile{animation:shimmer 4s var(--ease) infinite}
 .ph-tile.g2{animation-delay:.4s}.ph-tile.g3{animation-delay:.8s}
 .ph-tile.g4{animation-delay:1.2s}.ph-tile.g5{animation-delay:1.6s}.ph-tile.g6{animation-delay:2s}
-@keyframes shimmer{0%,100%{opacity:1}50%{opacity:.78}}
+@keyframes shimmer{0%,100%{opacity:1}50%{opacity:.8}}
+.grad-flow{background-size:200% auto; animation:flow 5s linear infinite}
+@keyframes flow{to{background-position:200% center}}
 
 /* =========================================================================
-   TABLET  (>= 680px)
+   TABLET  (>= 640px)
    ========================================================================= */
-@media(min-width:680px){
-  section{padding:70px 0}
-  .proof{grid-template-columns:repeat(4,1fr)}
+@media(min-width:640px){
+  section{padding:64px 0}
+  .bento{grid-template-columns:repeat(3,1fr)}
   .svc-grid{grid-template-columns:repeat(2,1fr)}
   .work-grid{grid-template-columns:repeat(2,1fr)}
-  .brands-grid{grid-template-columns:repeat(3,1fr)}
+  .brands-grid{grid-template-columns:repeat(2,1fr)}
   .skills-grid{grid-template-columns:1fr 1fr}
   .facts{grid-template-columns:repeat(4,1fr)}
-  .proj .cover{height:170px}
-  #contact .card{padding:56px 40px}
+  .honours-grid{grid-template-columns:1fr 1fr}
+  .proj .cover{height:160px}
+  #contact .card{padding:54px 40px}
 }
 
 /* =========================================================================
-   WIDE NAV  (>= 880px)  horizontal link bar appears
+   WIDE NAV  (>= 860px)
    ========================================================================= */
-@media(min-width:880px){
-  .nav-links{display:flex; align-items:center; gap:26px; font-size:.92rem; font-weight:500}
+@media(min-width:860px){
+  .nav-links{display:flex; align-items:center; gap:24px; font-size:.9rem; font-weight:500}
   .nav-links a{color:var(--muted); transition:color .2s; position:relative}
   .nav-links a:hover{color:var(--text)}
   .nav-links a::after{content:""; position:absolute; left:0; bottom:-6px; height:2px; width:0; background:var(--grad); transition:width .3s}
   .nav-links a:hover::after{width:100%}
   .nav-cta{display:inline-flex}
   .burger{display:none}
+  .brands-grid{grid-template-columns:repeat(3,1fr)}
 }
 
 /* =========================================================================
    DESKTOP  (>= 1024px)
    ========================================================================= */
 @media(min-width:1024px){
+  :root{--nav-h:74px}
   section{padding:84px 0}
-  .hero{padding-top:46px}
-  .hero-grid{display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:30px}
-  .hero h1{font-size:clamp(3rem,4.6vw,4.6rem)}
-  .hero .lede{font-size:1.16rem}
-  .feed-stage{margin:0 0 0 auto; width:340px}
-  .svc-grid{grid-template-columns:repeat(2,1fr); gap:20px}
-  .work-grid{grid-template-columns:repeat(2,1fr); gap:22px}
-  .brands-grid{grid-template-columns:repeat(3,1fr); gap:16px}
+  .hero{padding-top:40px}
+  .hero-grid{display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:34px}
+  .hero h1{font-size:clamp(3rem,4.4vw,4.6rem)}
+  .hero .lede{font-size:1.14rem}
+  .feed-stage{margin:0 0 0 auto; width:330px}
+  .svc-grid{gap:18px}
+  .work-grid{gap:20px}
   .about-grid{grid-template-columns:300px 1fr; gap:46px; align-items:start}
   .about-photo{margin:0}
-  .sec-head{margin-bottom:44px}
+  .sec-head{margin-bottom:40px}
 }
 
 /* =========================================================================
@@ -456,7 +448,7 @@ footer{border-top:1px solid var(--border); padding:30px 0; margin-top:10px}
    ========================================================================= */
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none !important; transition:none !important; scroll-behavior:auto !important}
-  .reveal{opacity:1; transform:none}
+  .reveal,.hero-head>*,.feed-stage{opacity:1 !important; transform:none !important}
 }
 </style>
 </head>
@@ -504,8 +496,8 @@ footer{border-top:1px solid var(--border); padding:30px 0; margin-top:10px}
   <div class="hero-grid">
     <div class="hero-head">
       <span class="eyebrow hero-eyebrow">Social Media Manager · Gurgaon, India</span>
-      <h1>I make brands the accounts people <span class="ital grad-text">actually want to follow.</span></h1>
-      <p class="lede">Strategy, content, and community that move real numbers. For <b>5 years</b> I've grown audiences across <b>Web3, travel, and crowdfunding</b>, the kind of work that gets noticed and gets results.</p>
+      <h1>I turn brands into the accounts people <span class="ital grad-text grad-flow">can't stop following.</span></h1>
+      <p class="lede">Strategy, content, and community that move real numbers. <b>6+ years</b> growing brands across <b>Web3, travel, and crowdfunding</b>, from ₹1Cr+ ad budgets to a kiosk at TOKEN2049 Dubai.</p>
       <div class="cap-row">
         <span class="cap"><i></i>Content Strategy</span>
         <span class="cap"><i></i>Paid Social</span>
@@ -513,30 +505,31 @@ footer{border-top:1px solid var(--border); padding:30px 0; margin-top:10px}
         <span class="cap"><i></i>Influencer & Events</span>
       </div>
       <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary">Work With Me →</a>
+        <a href="#contact" class="btn btn-primary" id="magBtn">Work With Me →</a>
         <a href="#work" class="btn btn-ghost">See The Work</a>
       </div>
     </div>
 
     <!-- THE LIVING FEED -->
     <div class="hero-media">
-      <div class="feed-stage reveal">
-        <div class="bubble b-eng"><span class="ic">📈</span><span>+65% engagement<span class="sub">Web3 community</span></span></div>
-        <div class="bubble b-token"><span class="ic">🌍</span><span>TOKEN2049<span class="sub">Dubai, on-ground</span></span></div>
+      <div class="feed-stage">
+        <div class="hearts"><i>❤️</i><i>💖</i><i>❤️</i></div>
+        <div class="bubble b-eng"><span class="ic">📈</span><span>+65% engagement<span class="sub">in 3 months · Web3</span></span></div>
+        <div class="bubble b-token"><span class="ic">🌍</span><span>TOKEN2049<span class="sub">Dubai · on-ground</span></span></div>
         <div class="bubble b-heart"><span class="ic">❤️</span></div>
         <div class="phone">
           <div class="ph-top"><span>9:41</span><span>📶 🔋</span></div>
           <div class="ph-prof">
-            <div class="story-ring"><div class="disc" id="feedDisc"><img src="priyanka.jpg" alt="Priyanka Moura" onerror="this.style.display='none';this.parentElement.innerHTML='PM'"></div></div>
+            <div class="story-ring"><div class="disc"><img src="priyanka.jpg" alt="Priyanka Moura" onerror="this.style.display='none';this.parentElement.innerHTML='PM'"></div></div>
             <div class="ph-meta">
               <div class="h">priyanka.creates <span class="tick">✓</span></div>
-              <div class="s">Social Media Manager · Content & Growth</div>
+              <div class="s">Social Media Manager · Growth</div>
             </div>
           </div>
           <div class="ph-stats">
-            <div class="st"><div class="n" data-count="248" data-suffix="">0</div><div class="l">Posts</div></div>
-            <div class="st"><div class="n" data-count="86" data-suffix="K">0</div><div class="l">Reached</div></div>
-            <div class="st"><div class="n" data-count="6" data-suffix="">0</div><div class="l">Industries</div></div>
+            <div class="st"><div class="n" data-count="312">0</div><div class="l">Posts</div></div>
+            <div class="st"><div class="n" data-count="100" data-suffix="K+">0</div><div class="l">Reached</div></div>
+            <div class="st"><div class="n" data-count="6" data-suffix="">0</div><div class="l">Sectors</div></div>
           </div>
           <div class="ph-grid">
             <div class="ph-tile g1"><span>✈️</span></div>
@@ -546,19 +539,27 @@ footer{border-top:1px solid var(--border); padding:30px 0; margin-top:10px}
             <div class="ph-tile g5"><span>🎤</span></div>
             <div class="ph-tile g6"><span>🌆</span></div>
           </div>
+          <div class="ph-like">❤️ Liked by <b>brands worldwide</b> and <b id="likeN">1,204</b> others</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ PROOF ============ -->
-<section class="wrap" id="proof">
-  <div class="proof reveal">
-    <div class="p"><div class="n grad-text">5+</div><div class="l">Years in social</div></div>
-    <div class="p"><div class="n grad-text">₹1Cr+</div><div class="l">Ad budgets managed</div></div>
-    <div class="p"><div class="n grad-text">£12K</div><div class="l">Monthly Meta spend</div></div>
-    <div class="p"><div class="n grad-text">6</div><div class="l">Industries grown</div></div>
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="mq-track" id="mqTrack"></div>
+</div>
+
+<!-- ============ BENTO STATS ============ -->
+<section class="wrap" id="stats">
+  <div class="bento">
+    <div class="tile hot span2 reveal"><span class="pin">⭐</span><div class="n" data-count="6" data-suffix="+">0</div><div class="l">Years growing brands on social</div></div>
+    <div class="tile warm reveal"><div class="n">₹1Cr+</div><div class="l">Monthly ad budgets managed at Ketto</div></div>
+    <div class="tile reveal"><div class="n">£12K</div><div class="l">Monthly Meta spend, travel brands</div></div>
+    <div class="tile reveal"><div class="n" data-count="65" data-suffix="%">0</div><div class="l">Engagement lift in 3 months</div></div>
+    <div class="tile reveal"><div class="n" data-count="20" data-suffix="%">0</div><div class="l">ROI increase for clients</div></div>
+    <div class="tile warm span2 reveal"><span class="pin">🎤</span><div class="n">4+ events</div><div class="l">Hackathons & meetups organised, 100+ attendees each</div></div>
   </div>
 </section>
 
@@ -567,36 +568,32 @@ footer{border-top:1px solid var(--border); padding:30px 0; margin-top:10px}
   <div class="sec-head reveal">
     <span class="eyebrow">What I do</span>
     <h2>Four ways I grow a brand.</h2>
-    <p>Not posting for the sake of posting. Every piece has a job: reach the right people, make them feel something, and turn that into followers, leads, or sales.</p>
+    <p>Not posting for the sake of posting. Every piece of content has a job: reach the right people, make them feel something, and turn that into followers, leads, or sales.</p>
   </div>
   <div class="svc-grid">
     <div class="svc reveal">
-      <div class="num">01</div>
-      <div class="ic">🧭</div>
+      <div class="num">01</div><div class="ic">🧭</div>
       <h3>Social Strategy</h3>
-      <p>The plan before the posts. Audience, voice, content pillars, and a calendar that actually fits how your brand sounds. So you stop guessing and start showing up with intent.</p>
-      <div class="tags"><span>Content pillars</span><span>Calendars</span><span>Brand voice</span></div>
+      <p>The plan before the posts. Audience research, brand voice, content pillars, and a calendar that fits how your brand actually sounds. So you stop guessing and start showing up with intent.</p>
+      <div class="tags"><span>Content pillars</span><span>Calendars</span><span>Brand voice</span><span>Competitor analysis</span></div>
     </div>
     <div class="svc reveal">
-      <div class="num">02</div>
-      <div class="ic">🎬</div>
+      <div class="num">02</div><div class="ic">🎬</div>
       <h3>Content That Converts</h3>
-      <p>Reels, carousels, stories, and copy that stop the scroll. Designed for the platform, written for the human, built to be saved and shared, not skipped.</p>
-      <div class="tags"><span>Reels & shorts</span><span>Carousels</span><span>Captions</span></div>
+      <p>Reels, carousels, stories, and copy that stop the scroll. Designed for the platform, written for the human, built to be saved and shared. I shoot, edit, and design it too, not just brief it.</p>
+      <div class="tags"><span>Reels & video</span><span>Carousels</span><span>Captions</span><span>Canva & editing</span></div>
     </div>
     <div class="svc reveal">
-      <div class="num">03</div>
-      <div class="ic">💬</div>
+      <div class="num">03</div><div class="ic">💬</div>
       <h3>Community & Growth</h3>
-      <p>Followers are nice. A community that talks back is gold. I grow and nurture the people behind the numbers, online and at real events with hundreds in the room.</p>
-      <div class="tags"><span>Community mgmt</span><span>Engagement</span><span>Events</span></div>
+      <p>Followers are nice. A community that talks back is gold. I grow and nurture the people behind the numbers, online and at real events with hundreds in the room. Plus influencer collabs that build real credibility.</p>
+      <div class="tags"><span>Community mgmt</span><span>Influencer collabs</span><span>Events</span></div>
     </div>
     <div class="svc reveal">
-      <div class="num">04</div>
-      <div class="ic">🎯</div>
+      <div class="num">04</div><div class="ic">🎯</div>
       <h3>Paid Social</h3>
-      <p>Meta and beyond, run with a steady hand. I've managed £12K a month and ₹1Cr+ budgets, so your spend goes to the people most likely to actually care.</p>
-      <div class="tags"><span>Meta Ads</span><span>Targeting</span><span>Reporting</span></div>
+      <p>Meta campaigns run with a steady hand. I've managed £12K a month and ₹1Cr+ budgets with A/B testing, sharp targeting, and Google Analytics reporting. So your spend reaches people who actually care.</p>
+      <div class="tags"><span>Meta Ads</span><span>A/B testing</span><span>Targeting</span><span>Analytics</span></div>
     </div>
   </div>
 </section>
@@ -605,8 +602,8 @@ footer{border-top:1px solid var(--border); padding:30px 0; margin-top:10px}
 <section class="wrap" id="work">
   <div class="sec-head reveal">
     <span class="eyebrow">Selected work</span>
-    <h2>Brands I've helped grow.</h2>
-    <p>A few of the roles where I owned the social. Real budgets, real audiences, real results. Visuals and full case studies coming as I gather them.</p>
+    <h2>Where I've made an impact.</h2>
+    <p>Six years across six very different worlds. Real budgets, real audiences, real results. Each one taught me a brand should never sound like the last.</p>
   </div>
   <div class="work-grid" id="workGrid"></div>
 </section>
@@ -616,7 +613,7 @@ footer{border-top:1px solid var(--border); padding:30px 0; margin-top:10px}
   <div class="sec-head reveal">
     <span class="eyebrow">Trusted with</span>
     <h2>Names you'll recognise.</h2>
-    <p>From Web3 launches to global travel, I've created and run social for brands people know, and partnered with some of the biggest in their space.</p>
+    <p>From Web3 launches to global travel, I've run social for brands people know and partnered with some of the biggest names in their space.</p>
   </div>
   <div class="brands-grid" id="brandsGrid"></div>
 </section>
@@ -629,13 +626,13 @@ footer{border-top:1px solid var(--border); padding:30px 0; margin-top:10px}
   </div>
   <div class="skills-grid">
     <div class="skill-card reveal">
-      <h3><span class="ic">📱</span>Platforms & channels</h3>
+      <h3><span class="ic">📊</span>Skills & strengths</h3>
       <div class="bars" id="bars"></div>
     </div>
     <div class="skill-card reveal">
       <h3><span class="ic">🧰</span>Tools I live in</h3>
       <div class="cloud" id="toolCloud"></div>
-      <h3 style="margin-top:24px"><span class="ic">✨</span>And the soft stuff</h3>
+      <h3 style="margin-top:22px"><span class="ic">✨</span>And the human stuff</h3>
       <div class="cloud" id="softCloud"></div>
     </div>
   </div>
@@ -646,28 +643,42 @@ footer{border-top:1px solid var(--border); padding:30px 0; margin-top:10px}
   <div class="about-grid">
     <div class="about-photo reveal" id="aboutPhoto">
       <img src="priyanka.jpg" alt="Priyanka Moura" onerror="this.parentElement.classList.remove('img-ok')">
-      <div class="ph"><div class="ring">📸</div>Drop a photo at<br><b>priyanka.jpg</b></div>
+      <div class="ph"><div class="ring">📸</div>Drop a photo named<br><b>priyanka.jpg</b></div>
     </div>
     <div class="about-text reveal">
       <span class="eyebrow">About</span>
       <h2>Hi, I'm Priyanka.</h2>
-      <p>I'm a social media manager who genuinely loves this stuff. The trend that lands, the caption that gets a hundred replies, the launch that gets people talking. That's the fun part, and somehow it's also my job.</p>
-      <p>Over <b>5 years</b> I've run social for Web3 startups, travel brands, and crowdfunding platforms. I've managed <b>£12K a month</b> in Meta spend, grown a Web3 community's engagement by <b>65%</b>, and stood on the ground at <b>TOKEN2049 Dubai</b> making it all happen in real life, not just on a screen.</p>
-      <p>I care about the numbers, but I care more about the people behind them. A follower count is just a number until those people actually feel something about your brand. That's the part I get right.</p>
+      <p>I'm a digital marketer who fell hard for social. The trend that lands, the caption that gets a hundred replies, the launch that gets people talking. That's the fun part, and somehow it's also my job.</p>
+      <p>Over <b>6+ years</b> I've grown brands across Web3, travel, crowdfunding, astrology, and startup media. I've managed <b>₹1Cr+ monthly budgets</b> at Ketto, run <b>£12K a month</b> in Meta spend across UK travel, lifted a Web3 community's engagement <b>65% in three months</b>, and stood on the ground at <b>TOKEN2049 Dubai</b> running the kiosk in real life, not just on a screen.</p>
+      <p>I blend creativity with data. I care about the numbers, but I care more about the people behind them. A follower count is just a number until those people actually feel something about your brand. That's the part I get right.</p>
       <div class="facts">
         <div class="fact"><div class="k">Based in</div><div class="v">Gurgaon, India 🇮🇳</div></div>
-        <div class="fact"><div class="k">Education</div><div class="v">MBA · Marketing</div></div>
-        <div class="fact"><div class="k">Loves</div><div class="v">Travel & momos 🥟</div></div>
-        <div class="fact"><div class="k">Works with</div><div class="v">Brands worldwide</div></div>
+        <div class="fact"><div class="k">Education</div><div class="v">MBA · B.Com</div></div>
+        <div class="fact"><div class="k">Certified</div><div class="v">Google Digital Garage</div></div>
+        <div class="fact"><div class="k">Honours</div><div class="v">2× Army scholarships</div></div>
       </div>
       <div class="timeline">
-        <div class="tl"><div class="when">2024 → PRESENT</div><div class="what">Social Media Manager</div><div class="co">Endless Domains · Web3</div></div>
-        <div class="tl"><div class="when">2023 → 2024</div><div class="what">Social Media Manager</div><div class="co">Ketto · Crowdfunding</div></div>
-        <div class="tl"><div class="when">2022 → 2023</div><div class="what">Social Media Executive</div><div class="co">Southall Travel</div></div>
-        <div class="tl"><div class="when">2021 → 2022</div><div class="what">Social & Content</div><div class="co">Sai Jagannatha Astrology Centre</div></div>
-        <div class="tl"><div class="when">2019 → 2021</div><div class="what">Content & Community</div><div class="co">Startup Talky</div></div>
+        <div class="tl"><div class="when">OCT 2025 → PRESENT</div><div class="what">Social Media Manager</div><div class="co">Onkar Infotech · Southall Travel & Away Holidays</div></div>
+        <div class="tl"><div class="when">APR 2025 → AUG 2025</div><div class="what">Social Media Manager</div><div class="co">Aacetechlabs · Endless Domains (Web3)</div></div>
+        <div class="tl"><div class="when">AUG 2023 → MAR 2025</div><div class="what">Social Media Manager</div><div class="co">Sai Jagannatha Astrology Centre</div></div>
+        <div class="tl"><div class="when">JAN 2021 → JUL 2023</div><div class="what">Senior Digital Marketing Executive</div><div class="co">Ketto · Crowdfunding</div></div>
+        <div class="tl"><div class="when">JUN 2020 → DEC 2020</div><div class="what">Digital Marketing Executive</div><div class="co">Startup Talky · SEO & Social</div></div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============ HONOURS ============ -->
+<section class="wrap" id="honours">
+  <div class="sec-head reveal">
+    <span class="eyebrow">Credentials & honours</span>
+    <h2>The formal stuff.</h2>
+  </div>
+  <div class="honours-grid">
+    <div class="honour reveal"><div class="ic">🎓</div><div><div class="hn">MBA · Marketing</div><div class="hd">Dr. D. Y. Patil Vidyapeeth, Pune. Plus a B.Com from Government College, Sagar.</div></div></div>
+    <div class="honour reveal"><div class="ic">📜</div><div><div class="hn">Google Digital Garage</div><div class="hd">Fundamentals of Digital Marketing, certified by Google (2020).</div></div></div>
+    <div class="honour reveal"><div class="ic">🏅</div><div><div class="hn">Academic Excellence Award</div><div class="hd">Award and cash scholarship from the Indian Army for academic performance in senior secondary school.</div></div></div>
+    <div class="honour reveal"><div class="ic">🎖️</div><div><div class="hn">EME Core Division Scholarship</div><div class="hd">Cash scholarship and felicitation from the EME Core Division of the Army.</div></div></div>
   </div>
 </section>
 
@@ -683,7 +694,7 @@ footer{border-top:1px solid var(--border); padding:30px 0; margin-top:10px}
     </div>
     <div class="contact-meta">
       <a href="mailto:priyankamoura0025@gmail.com">📧 priyankamoura0025@gmail.com</a>
-      <a href="https://www.linkedin.com/in/priyanka-moura/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+      <a href="https://www.linkedin.com/in/priyanka-moura/" target="_blank" rel="noopener">🔗 linkedin.com/in/priyanka-moura</a>
     </div>
   </div>
 </section>
@@ -719,10 +730,10 @@ footer{border-top:1px solid var(--border); padding:30px 0; margin-top:10px}
 </div>
 
 <script>
-/* ====================== YEAR ====================== */
 document.getElementById('yr').textContent=new Date().getFullYear();
+var REDUCE=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
 
-/* ====================== THEME (in-memory) ====================== */
+/* ===== THEME ===== */
 (function(){
   var btn=document.getElementById('themeBtn'), root=document.documentElement;
   btn.addEventListener('click',function(){
@@ -732,7 +743,7 @@ document.getElementById('yr').textContent=new Date().getFullYear();
   });
 })();
 
-/* ====================== MOBILE DRAWER ====================== */
+/* ===== DRAWER ===== */
 (function(){
   var d=document.getElementById('drawer'), s=document.getElementById('scrim');
   function open(){d.classList.add('open');s.classList.add('show')}
@@ -743,63 +754,71 @@ document.getElementById('yr').textContent=new Date().getFullYear();
   d.querySelectorAll('[data-close]').forEach(function(a){a.addEventListener('click',close)});
 })();
 
-/* ====================== WORK CARDS ====================== */
+/* ===== MARQUEE ===== */
+(function(){
+  var names=['Emirates','Qatar Airways','Atlantis The Palm','Ketto','Endless Domains','Southall Travel','Away Holidays'];
+  var one=names.map(function(n){return '<span class="it">'+n+'</span>'}).join('');
+  document.getElementById('mqTrack').innerHTML=one+one; // duplicate for seamless loop
+})();
+
+/* ===== WORK CARDS (from real CV) ===== */
 (function(){
   var W=[
-    {tag:'Web3',cls:'cv2',role:'Endless Domains',emoji:'🪙',title:'Building a Web3 community from scratch',desc:'Owned social for a Web3 naming platform, including on-ground content at TOKEN2049 Dubai. Turned a niche, technical product into a community people wanted to be part of.',stats:[['+65%','Engagement'],['TOKEN2049','On-ground'],['Web3','Niche grown']]},
-    {tag:'Crowdfunding',cls:'cv1',role:'Ketto',emoji:'💖',title:'Social that drives real donations',desc:'Ran social and paid campaigns for one of India\'s largest crowdfunding platforms. Storytelling that turned scrolls into support for causes that mattered.',stats:[['₹1Cr+','Budgets'],['Paid + organic','Full funnel'],['Cause-led','Storytelling']]},
-    {tag:'Travel',cls:'cv3',role:'Southall Travel',emoji:'✈️',title:'Paid social at travel-brand scale',desc:'Managed Meta campaigns for a major UK travel brand, with monthly budgets up to £12K. Audience targeting and creative that filled seats, not just feeds.',stats:[['£12K','Monthly Meta'],['UK','Travel'],['Performance','Focused']]},
-    {tag:'Lifestyle',cls:'cv4',role:'Sai Jagannatha Astrology Centre',emoji:'🔮',title:'Content for a faith-led brand',desc:'Built warm, trustworthy social content for a lifestyle and astrology brand. Grew a loyal, engaged following with a voice that felt personal, never salesy.',stats:[['Organic','Growth'],['Community','Loyal'],['Daily','Content']]},
-    {tag:'Media',cls:'cv5',role:'Startup Talky',emoji:'🎤',title:'Where it all started',desc:'Content and community for a startup-focused media brand. The role that taught me how to write for an audience and keep them coming back for more.',stats:[['Content','+ Community'],['Startups','Niche'],['Foundations','Built here']]}
+    {tag:'Web3',yr:"'25",cls:'cv1',role:'Aacetechlabs · Endless Domains',emoji:'🪙',title:'Launching a Web3 brand into the world',desc:'Owned social for a decentralized-domains startup. Represented them on the ground at TOKEN2049 Dubai running the OUS kiosk, organised hackathons and meetups, and built a real community around a technical product.',stats:[['+65%','Engagement'],['TOKEN2049','On-ground'],['+30%','Community']]},
+    {tag:'Travel',yr:"'25",cls:'cv2',role:'Onkar Infotech · Southall Travel & Away Holidays',emoji:'✈️',title:'Paid social at global travel scale',desc:'Run Meta campaigns for major UK travel brands with budgets up to £12K a month. Built A/B-tested ad strategies across Facebook and Instagram and coordinated partnerships with Emirates, Qatar Airways, and Atlantis The Palm.',stats:[['£12K','Monthly Meta'],['Emirates +','Partners'],['UK','Travel']]},
+    {tag:'Crowdfunding',yr:"'21",cls:'cv3',role:'Ketto',emoji:'💖',title:'Social that drives real donations',desc:'Senior role at one of India\'s largest crowdfunding platforms. Managed ₹1Cr+ monthly budgets, ran influencer campaigns with well-known personalities, mentored the team, and lifted client ROI by 20%.',stats:[['₹1Cr+','Budgets'],['+20%','ROI'],['Team','Led & mentored']]},
+    {tag:'Lifestyle',yr:"'23",cls:'cv4',role:'Sai Jagannatha Astrology Centre',emoji:'🔮',title:'Content for a faith-led brand',desc:'Grew brand awareness across Instagram and YouTube with a warm, trustworthy voice. Coordinated shoots with agencies, ran paid campaigns, and led a team of creators, designers, and editors.',stats:[['IG + YT','Channels'],['Team','Led creators'],['Paid +','Organic']]},
+    {tag:'Media',yr:"'20",cls:'cv5',role:'Startup Talky',emoji:'🎤',title:'Where it all started',desc:'SEO and social for a startup-focused media platform. Optimised 50+ articles, ran competitor analysis, and handled weekly performance reporting. The role that taught me to write for an audience and keep them coming back.',stats:[['50+','Articles'],['SEO','+ Social'],['Weekly','Reporting']]}
   ];
-  var g=document.getElementById('workGrid');
-  g.innerHTML=W.map(function(p){
+  document.getElementById('workGrid').innerHTML=W.map(function(p){
     return '<article class="proj reveal">'+
-      '<div class="cover '+p.cls+'"><span class="tag">'+p.tag+'</span><span class="emoji">'+p.emoji+'</span></div>'+
+      '<div class="cover '+p.cls+'"><span class="tag">'+p.tag+'</span><span class="yr">'+p.yr+'</span><span class="emoji">'+p.emoji+'</span></div>'+
       '<div class="body"><div class="role">'+p.role+'</div><h3>'+p.title+'</h3><p>'+p.desc+'</p>'+
       '<div class="stats">'+p.stats.map(function(m){return '<div class="m"><div class="v">'+m[0]+'</div><div class="k">'+m[1]+'</div></div>'}).join('')+'</div></div></article>';
   }).join('');
 })();
 
-/* ====================== BRANDS ====================== */
+/* ===== BRANDS ===== */
 (function(){
   var B=[
     ['Ketto','Crowdfunding · India','ketto.org'],
     ['Endless Domains','Web3 · Global','endlessdomains.io'],
     ['Southall Travel','Travel · UK','southalltravel.co.uk'],
+    ['Away Holidays','Travel · UK','awayholidays.co.uk'],
     ['Emirates','Aviation · Partner','emirates.com'],
     ['Qatar Airways','Aviation · Partner','qatarairways.com'],
-    ['Atlantis The Palm','Hospitality · Partner','atlantis.com']
+    ['Atlantis The Palm','Hospitality · Partner','atlantis.com'],
+    ['Startup Talky','Media · India','startuptalky.com']
   ];
   document.getElementById('brandsGrid').innerHTML=B.map(function(b){
     return '<a class="brand-card" href="https://'+b[2]+'" target="_blank" rel="noopener">'+
       '<img class="logo" src="https://www.google.com/s2/favicons?domain='+b[2]+'&sz=128" alt="'+b[0]+'" loading="lazy" onerror="this.closest(\'.brand-card\').classList.add(\'noimg\')">'+
       '<span class="mono">'+b[0][0]+'</span>'+
-      '<span><span class="bn">'+b[0]+'</span><span class="bs">'+b[1]+'</span></span></a>';
+      '<span class="bx"><span class="bn">'+b[0]+'</span><span class="bs">'+b[1]+'</span></span></a>';
   }).join('');
 })();
 
-/* ====================== SKILL BARS ====================== */
+/* ===== SKILLS (from CV) ===== */
 (function(){
-  var S=[['Instagram',95],['Meta Ads',88],['LinkedIn',85],['Content & Reels',92],['Community',90]];
+  var S=[['Social Media Strategy',95],['Meta Ads / Paid Social',90],['Content & Video Editing',88],['Google Analytics',85],['Community & Influencer',92],['SEO / PPC',80]];
   document.getElementById('bars').innerHTML=S.map(function(s){
     return '<div class="bar"><div class="top"><span>'+s[0]+'</span><span class="pct">'+s[1]+'%</span></div>'+
       '<div class="track"><div class="fill" data-w="'+s[1]+'"></div></div></div>';
   }).join('');
-  var tools=['Meta Business Suite','Canva','CapCut','Buffer','Later','Google Analytics','Notion','Figma'];
-  var soft=['Storytelling','Trend-spotting','Copywriting','Community building','Calm under launch'];
+  var tools=['Meta Business Suite','Google Analytics','Canva','Video Editing','Excel','PowerPoint','Calendar Management','A/B Testing'];
+  var soft=['Storytelling','Team leadership','Influencer outreach','Event management','Trend-spotting','Data + creativity'];
   document.getElementById('toolCloud').innerHTML=tools.map(function(t){return '<span>'+t+'</span>'}).join('');
   document.getElementById('softCloud').innerHTML=soft.map(function(t){return '<span>'+t+'</span>'}).join('');
 })();
 
-/* ====================== COUNTERS + BAR FILL + REVEAL ====================== */
+/* ===== COUNTERS + BAR FILL + REVEAL ===== */
 (function(){
-  var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
   function animateCount(el){
-    var target=+el.getAttribute('data-count'), suf=el.getAttribute('data-suffix')||'', start=0, t0=null, dur=1400;
-    if(reduce){el.textContent=target+suf;return;}
+    var raw=el.getAttribute('data-count'), target=parseInt(raw,10), suf=el.getAttribute('data-suffix')||'';
+    if(REDUCE){el.textContent=target.toLocaleString()+suf;return;}
+    var t0=null, dur=1400;
     function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/dur,1);var e=1-Math.pow(1-p,3);
-      el.textContent=Math.round(target*e)+suf;if(p<1)requestAnimationFrame(step);}
+      el.textContent=Math.round(target*e).toLocaleString()+suf;if(p<1)requestAnimationFrame(step);}
     requestAnimationFrame(step);
   }
   var io=new IntersectionObserver(function(ents){
@@ -810,28 +829,48 @@ document.getElementById('yr').textContent=new Date().getFullYear();
       e.target.querySelectorAll('.fill[data-w]').forEach(function(f){f.style.width=f.getAttribute('data-w')+'%'});
       io.unobserve(e.target);
     });
-  },{threshold:.18});
+  },{threshold:.16});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
-  // counters/photo flag that aren't reveal-wrapped
-  var disc=document.getElementById('aboutPhoto');
-  var img=disc.querySelector('img');
-  if(img.complete&&img.naturalWidth>0)disc.classList.add('img-ok');
-  img.addEventListener('load',function(){disc.classList.add('img-ok')});
+
+  // hero phone counters fire on load (above fold)
+  document.querySelectorAll('.feed-stage [data-count]').forEach(animateCount);
+
+  // about photo flag
+  var ap=document.getElementById('aboutPhoto'), img=ap.querySelector('img');
+  if(img.complete&&img.naturalWidth>0)ap.classList.add('img-ok');
+  img.addEventListener('load',function(){ap.classList.add('img-ok')});
 })();
 
-/* ====================== SCROLL PROGRESS + TO TOP ====================== */
+/* ===== LIVE LIKE TICKER ===== */
+(function(){
+  if(REDUCE)return;
+  var el=document.getElementById('likeN'); if(!el)return;
+  var n=1204;
+  setInterval(function(){n+=Math.floor(Math.random()*3)+1; el.textContent=n.toLocaleString();},2600);
+})();
+
+/* ===== MAGNETIC BUTTON ===== */
+(function(){
+  if(REDUCE||!window.matchMedia('(pointer:fine)').matches)return;
+  var b=document.getElementById('magBtn'); if(!b)return;
+  b.addEventListener('mousemove',function(e){var r=b.getBoundingClientRect();
+    var x=e.clientX-r.left-r.width/2, y=e.clientY-r.top-r.height/2;
+    b.style.transform='translate('+x*.25+'px,'+(y*.35-2)+'px)';});
+  b.addEventListener('mouseleave',function(){b.style.transform=''});
+})();
+
+/* ===== SCROLL PROGRESS + TO TOP ===== */
 (function(){
   var prog=document.getElementById('scrollProg'), top=document.getElementById('toTop');
   window.addEventListener('scroll',function(){
     var h=document.documentElement.scrollHeight-innerHeight;
-    var p=h>0?(scrollY/h*100):0;
-    prog.style.width=p+'%';
+    prog.style.width=(h>0?scrollY/h*100:0)+'%';
     top.classList.toggle('show',scrollY>600);
   },{passive:true});
   top.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});
 })();
 
-/* ====================== CHATBOT (rule-based, warm voice) ====================== */
+/* ===== CHATBOT (rule-based, real CV data) ===== */
 (function(){
   var fab=document.getElementById('chatFab'), panel=document.getElementById('chatPanel'),
       log=document.getElementById('chatLog'), input=document.getElementById('chatInput'),
@@ -841,33 +880,33 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 
   var INTENTS=[
     {kw:['hi','hii','hey','hello','heya','yo','hola','namaste'],ph:['good morning','good evening','good afternoon'],
-     a:["Hi there! 👋 I'm Priyanka's little assistant. Ask me about her work, what she does, or how to reach her.","Hey! 😊 Want to know about Priyanka's experience, services, or how to book her?"],
+     a:["Hi there! 👋 I'm Priyanka's assistant. Ask me about her work, what she does, or how to reach her.","Hey! 😊 Want to know about Priyanka's experience, services, or how to book her?"],
      next:['What does she do?','See her work','How do I hire her?']},
     {kw:['who','about','priyanka','herself','she'],ph:['who is she','tell me about','about priyanka','who is priyanka'],
-     a:["Priyanka Moura is a social media manager with 5+ years of experience across Web3, travel, and crowdfunding. She does strategy, content, community, and paid social, basically everything that makes a brand worth following. 💖"],
+     a:["Priyanka Moura is a social media manager with 6+ years across Web3, travel, crowdfunding, and more. She does strategy, content, community, and paid social, basically everything that makes a brand worth following. 💖"],
      next:['Her best work','What industries?','How do I hire her?']},
-    {kw:['do','service','services','offer','help','work','provide'],ph:['what does she do','what do you do','what does priyanka do','her services','what can she do'],
-     a:["She covers four things: 🧭 Social Strategy, 🎬 Content That Converts, 💬 Community & Growth, and 🎯 Paid Social. From the plan all the way to the posts and the ad spend."],
+    {kw:['do','service','services','offer','help','provide'],ph:['what does she do','what do you do','what does priyanka do','her services','what can she do'],
+     a:["She covers four things: 🧭 Social Strategy, 🎬 Content That Converts, 💬 Community & Growth, and 🎯 Paid Social. From the plan all the way to the posts and the ad spend, she does it hands-on."],
      next:['Tell me about paid social','Her results','How do I hire her?']},
-    {kw:['result','results','metric','numbers','growth','achieve','achievement','proof'],ph:['her results','what results','show me numbers'],
-     a:["A few real ones: 📈 +65% engagement for a Web3 community, 💷 £12K/month in Meta ad spend managed, and ₹1Cr+ in campaign budgets at Ketto. Plus on-ground content at TOKEN2049 Dubai. Not bad, right?"],
+    {kw:['result','results','metric','numbers','growth','achieve','achievement','proof','impact'],ph:['her results','what results','show me numbers'],
+     a:["A few real ones: 📈 +65% engagement in 3 months for a Web3 brand, 💷 £12K/month in Meta spend, ₹1Cr+ in monthly budgets at Ketto, +20% client ROI, and 4+ live events with 100+ attendees each. Plus on-ground at TOKEN2049 Dubai."],
      next:['Her best project','What industries?','How do I hire her?']},
     {kw:['project','projects','best','case','study','portfolio','example','examples'],ph:['her best work','best project','show me work','her work'],
-     a:["Her standout is the <b>Endless Domains</b> Web3 work, she grew engagement 65% and created content live at TOKEN2049 Dubai. She's also run ₹1Cr+ budgets at Ketto and £12K/month Meta at Southall Travel. Scroll up to the Work section to see them all."],
+     a:["Her standout is the <b>Endless Domains</b> Web3 work, +65% engagement and on-ground content at TOKEN2049 Dubai. She's also run £12K/month Meta for Southall Travel and ₹1Cr+ budgets at Ketto. Scroll up to the Work section for all of them."],
      next:['What industries?','Her services','Contact her']},
     {kw:['industry','industries','niche','sector','sectors','field'],ph:['what industries','which sectors'],
-     a:["Six and counting: Web3, travel, crowdfunding, lifestyle, media, and events. She adapts the voice to fit each one, a travel brand and a Web3 startup should never sound the same. 😉"],
+     a:["Six and counting: Web3, travel, crowdfunding, astrology/lifestyle, startup media, and events. She adapts the voice to each, a travel brand and a Web3 startup should never sound the same. 😉"],
      next:['Her results','Her services','Contact her']},
-    {kw:['paid','ads','ad','meta','facebook','instagram','spend','budget'],ph:['paid social','run ads','meta ads','ad spend'],
-     a:["Paid social is a real strength. She's managed up to £12K/month on Meta and ₹1Cr+ in total budgets, with proper targeting and reporting so the spend actually works rather than just burns."],
+    {kw:['paid','ads','ad','meta','facebook','instagram','spend','budget','ppc'],ph:['paid social','run ads','meta ads','ad spend'],
+     a:["Paid social is a real strength. She's managed up to £12K/month on Meta and ₹1Cr+ in total budgets, with A/B testing, targeting, and Google Analytics reporting. So the spend actually works rather than just burns."],
      next:['Her other services','Her results','Contact her']},
-    {kw:['content','reels','reel','video','post','posts','carousel','create','creative'],ph:['content creation','make content','create content'],
-     a:["Content is the fun part. 🎬 Reels, carousels, stories, captions, all built for the platform and the human scrolling it. Made to be saved and shared, not skipped."],
+    {kw:['content','reels','reel','video','post','posts','carousel','create','creative','editing'],ph:['content creation','make content','create content'],
+     a:["Content is the fun part. 🎬 Reels, carousels, stories, captions, all built for the platform and the human scrolling it. And she shoots, edits, and designs it herself with Canva and video editing, not just briefs it out."],
      next:['Her strategy work','Her results','Contact her']},
     {kw:['hire','book','contact','reach','email','connect','talk','message','collab','collaborate'],ph:['how do i hire','hire her','contact her','reach her','get in touch','work with her','book her'],
      a:["Easy! 💌 Email her at <a href='mailto:priyankamoura0025@gmail.com'>priyankamoura0025@gmail.com</a> or connect on <a href='https://www.linkedin.com/in/priyanka-moura/' target='_blank' rel='noopener'>LinkedIn</a>. She usually replies fast."],
      next:['What does she charge?','Her availability','Her services']},
-    {kw:['price','pricing','cost','rate','rates','charge','charges','fee','expensive','budget'],ph:['how much','what does she charge','her rates','her pricing'],
+    {kw:['price','pricing','cost','rate','rates','charge','charges','fee','expensive'],ph:['how much','what does she charge','her rates','her pricing'],
      a:["Pricing depends on scope, a one-off campaign and a full retainer are very different. Best bet is to email her with what you need at <a href='mailto:priyankamoura0025@gmail.com'>priyankamoura0025@gmail.com</a> and she'll put together something that fits."],
      next:['Contact her','Her services','Her availability']},
     {kw:['available','availability','free','open','hiring','capacity','start'],ph:['is she available','her availability','can she start'],
@@ -876,13 +915,16 @@ document.getElementById('yr').textContent=new Date().getFullYear();
     {kw:['location','based','where','place','city','country','remote'],ph:['where is she','where based','what location'],
      a:["She's based in Gurgaon, India 🇮🇳, and works with brands worldwide, remote-friendly across time zones."],
      next:['Her work','Contact her','What industries?']},
-    {kw:['education','study','degree','mba','qualified','qualification','college'],ph:['her education','did she study','her degree'],
-     a:["She has an MBA in Marketing 🎓, plus years of hands-on experience that taught her the things a classroom can't, like what actually goes viral."],
+    {kw:['education','study','degree','mba','qualified','qualification','college','certified','certificate'],ph:['her education','did she study','her degree','her qualifications'],
+     a:["She has an MBA in Marketing 🎓 and a B.Com, plus a Google Digital Garage certification. She also earned two scholarships from the Indian Army for academic excellence. 🏅"],
      next:['Her experience','Her work','Contact her']},
     {kw:['experience','years','long','senior','expert'],ph:['how experienced','how many years','her experience'],
-     a:["5+ years in social media, across Web3, travel, crowdfunding, and more. Senior enough to own strategy, hands-on enough to still make the Reels herself."],
+     a:["6+ years in digital and social media, across Web3, travel, crowdfunding, and more. Senior enough to own strategy and lead teams, hands-on enough to still make the Reels herself."],
      next:['Her results','Her work','Contact her']},
-    {kw:['thanks','thank','thx','ty','great','awesome','nice','cool','perfect','amazing'],ph:['thank you','thanks a lot'],
+    {kw:['team','lead','mentor','manage','manager'],ph:['does she lead','manage a team','team lead'],
+     a:["Yes, she's led and mentored teams of content creators, designers, and editors, and run digital marketing teams to hit campaign goals. So she's comfortable owning the whole thing, not just one piece."],
+     next:['Her work','Her services','Contact her']},
+    {kw:['thanks','thank','thx','ty','great','awesome','nice','cool','perfect','amazing','wow'],ph:['thank you','thanks a lot'],
      a:["Anytime! 😊 If you'd like to chat with Priyanka directly, just email <a href='mailto:priyankamoura0025@gmail.com'>priyankamoura0025@gmail.com</a>.","Glad to help! 💖 Reach her anytime at <a href='mailto:priyankamoura0025@gmail.com'>priyankamoura0025@gmail.com</a>."],
      next:['Her work','Her services','Contact her']},
     {kw:['bye','goodbye','later','cya','see','done'],ph:['see you','good bye','talk later'],
@@ -892,40 +934,33 @@ document.getElementById('yr').textContent=new Date().getFullYear();
      a:["I'm great, thanks for asking! 😄 Always happy to talk about Priyanka. What would you like to know?"],
      next:['What does she do?','Her work','How do I hire her?']},
     {kw:['momo','momos','food','eat','travel','hobby','fun','love'],ph:['her hobbies','what does she like','fun fact'],
-     a:["Fun fact: Priyanka runs on momos 🥟 and loves to travel. Which honestly makes her perfect for travel and lifestyle brands, she actually gets the vibe."],
+     a:["Fun fact: Priyanka runs on momos 🥟 and loves to travel, which honestly makes her perfect for travel and lifestyle brands. She actually gets the vibe."],
      next:['Her work','What industries?','Contact her']}
   ];
   var FALLBACK=[
     "Good question! I'm not totally sure on that one, but I can tell you about her work, services, or how to reach her. 😊",
     "Hmm, I might not have that, but I'd love to point you the right way. Want her work, services, or contact details?",
-    "I'll be honest, that's a bit outside my script! For anything specific, email Priyanka at <a href='mailto:priyankamoura0025@gmail.com'>priyankamoura0025@gmail.com</a>."
+    "That's a little outside my script! For anything specific, email Priyanka at <a href='mailto:priyankamoura0025@gmail.com'>priyankamoura0025@gmail.com</a>."
   ];
   var DEFAULTQ=['What does she do?','See her work','How do I hire her?'];
   var SYN={u:'you',ur:'your',r:'are',pls:'please',plz:'please',thx:'thanks',ty:'thanks',
-    hru:'how are you',hbu:'how about you',wbu:'how about you',abt:'about',coz:'because',
-    cuz:'because',ya:'yes',yeah:'yes',yep:'yes',nah:'no',nope:'no',wat:'what',wht:'what',
-    pic:'picture',insta:'instagram',ig:'instagram',fb:'facebook',sm:'social media'};
+    hru:'how are you',hbu:'how about you',abt:'about',coz:'because',cuz:'because',
+    ya:'yes',yeah:'yes',yep:'yes',nah:'no',nope:'no',wat:'what',wht:'what',
+    insta:'instagram',ig:'instagram',fb:'facebook',sm:'social media'};
 
   function pick(a,avoid){if(!Array.isArray(a))return a;if(a.length<2)return a[0];
-    var c=a.filter(function(x){return x!==avoid});var pool=c.length?c:a;
-    return pool[Math.floor(Math.random()*pool.length)];}
+    var c=a.filter(function(x){return x!==avoid});var pool=c.length?c:a;return pool[Math.floor(Math.random()*pool.length)];}
   function norm(s){return ' '+s.toLowerCase().replace(/[^a-z0-9& ]+/g,' ').replace(/ +/g,' ').trim()+' '}
   function expand(q){var ts=norm(q).trim().split(' ').map(function(w){return SYN.hasOwnProperty(w)?SYN[w]:w});
     return ' '+ts.join(' ').replace(/ +/g,' ').trim()+' '}
   function stem(w){return w.replace(/(ization|isation|ations|ation|ings|ing|ies|ied|ers|er|es|ed|s)$/,'')}
   function kmatch(k,toks){var sk=stem(k);for(var i=0;i<toks.length;i++){var t=toks[i];
-    if(t===k||stem(t)===sk||(k.length>=4&&t.indexOf(k)>=0)||(t.length>=4&&k.indexOf(t)>=0))return true}
-    return false}
-
-  function addMsg(html,who){var d=document.createElement('div');d.className='msg '+who;d.innerHTML=html;
-    log.appendChild(d);log.scrollTop=log.scrollHeight;return d;}
-  function setQuick(arr){quick.innerHTML='';(arr||DEFAULTQ).forEach(function(q){
-    var b=document.createElement('button');b.textContent=q;b.addEventListener('click',function(){handle(q)});quick.appendChild(b);});}
-  function botSay(html,next){
-    var t=document.createElement('div');t.className='msg bot';t.innerHTML='<div class="typing"><span></span><span></span><span></span></div>';
+    if(t===k||stem(t)===sk||(k.length>=4&&t.indexOf(k)>=0)||(t.length>=4&&k.indexOf(t)>=0))return true}return false}
+  function addMsg(html,who){var d=document.createElement('div');d.className='msg '+who;d.innerHTML=html;log.appendChild(d);log.scrollTop=log.scrollHeight;return d;}
+  function setQuick(arr){quick.innerHTML='';(arr||DEFAULTQ).forEach(function(q){var b=document.createElement('button');b.textContent=q;b.addEventListener('click',function(){handle(q)});quick.appendChild(b);});}
+  function botSay(html,next){var t=document.createElement('div');t.className='msg bot';t.innerHTML='<div class="typing"><span></span><span></span><span></span></div>';
     log.appendChild(t);log.scrollTop=log.scrollHeight;
     setTimeout(function(){t.innerHTML=html;log.scrollTop=log.scrollHeight;setQuick(next);},520);}
-
   function respond(q){var t=expand(q),toks=t.trim().split(' '),best=null,score=0;
     INTENTS.forEach(function(it){var sc=0;
       (it.ph||[]).forEach(function(p){if(t.indexOf(' '+p+' ')>=0||t.indexOf(p)>=0)sc+=3});
@@ -933,9 +968,7 @@ document.getElementById('yr').textContent=new Date().getFullYear();
       if(sc>score){score=sc;best=it;}});
     if(best&&score>0){var ans=pick(best.a,lastAns);lastAns=ans;botSay(ans,best.next||DEFAULTQ);}
     else{var fb=pick(FALLBACK,lastAns);lastAns=fb;botSay(fb,DEFAULTQ);}}
-
   function handle(text){text=(text||'').trim();if(!text)return;addMsg(text,'me');input.value='';respond(text);}
-
   function openPanel(){panel.classList.add('open');if(!opened){opened=true;
     setTimeout(function(){botSay("Hi! 👋 I'm here to tell you all about Priyanka. What would you like to know?",DEFAULTQ);},250);}}
   function closePanel(){panel.classList.remove('open');}
